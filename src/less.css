@@ -1,0 +1,420 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+}
+body {
+  @apply bg-base-100 text-base-content;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  @apply font-serif uppercase;
+}
+h1 {
+  @apply text-6xl;
+}
+@media only screen and (min-width: 768px) {
+  h1 {
+    @apply text-7xl;
+  }
+}
+h2 {
+  @apply text-5xl;
+}
+@media only screen and (min-width: 768px) {
+  h2 {
+    @apply text-6xl;
+  }
+}
+h3 {
+  @apply text-4xl;
+}
+@media only screen and (min-width: 768px) {
+  h3 {
+    @apply text-5xl;
+  }
+}
+h4 {
+  @apply text-3xl;
+}
+@media only screen and (min-width: 768px) {
+  h4 {
+    @apply text-4xl;
+  }
+}
+h5 {
+  @apply text-2xl;
+}
+@media only screen and (min-width: 768px) {
+  h5 {
+    @apply text-3xl;
+  }
+}
+h6 {
+  @apply text-xl;
+}
+@media only screen and (min-width: 768px) {
+  h6 {
+    @apply text-2xl;
+  }
+}
+.preloader {
+  @apply fixed bottom-0 left-0 right-0 top-0 z-50 flex h-screen w-screen items-center justify-center bg-base-100;
+}
+.preloader img {
+  @apply h-20 w-20 object-contain;
+}
+.toastify.success {
+  background: oklab(var(--su));
+  color: oklab(var(--suc));
+}
+.toastify.error {
+  background: oklab(var(--er));
+  color: oklab(var(--erc));
+}
+.toastify.info {
+  background: oklab(var(--in));
+  color: oklab(var(--inc));
+}
+.toastify.warning {
+  background: oklab(var(--wa));
+  color: oklab(var(--wac));
+}
+form .group > label {
+  @apply mb-2 block font-medium transition-all duration-500 ease-in-out;
+}
+form .group > input,
+form .group > textarea,
+form .group > .choices > .choices__inner {
+  @apply p-2.5 mb-2 block w-full rounded-lg border transition-all duration-500 ease-in-out;
+}
+form .group.error label {
+  @apply text-error;
+}
+form .group.error > input,
+form .group.error > textarea,
+form .group.error > .choices > .choices__inner {
+  @apply !border-error !bg-error/10 text-error placeholder-error focus:ring-error;
+}
+form .group.error p.error {
+  @apply text-sm text-error;
+}
+form .group > .choices {
+  @apply mb-2;
+}
+.pretty input:checked ~ .state label:after,
+.pretty.p-toggle .state label:after {
+  @apply !bg-primary;
+}
+.pretty input:checked ~ .state label:before,
+.pretty.p-toggle .state label:before {
+  @apply border-primary;
+}
+.pretty.p-default:not(.p-fill) input:checked ~ .state label:after {
+  @apply !bg-primary;
+}
+.pretty.p-switch input:checked ~ .state:before {
+  @apply border-primary;
+}
+.pretty.p-switch.p-fill input:checked ~ .state:before {
+  @apply !bg-primary;
+}
+.pretty.p-switch.p-slim input:checked ~ .state:before {
+  @apply border-primary !bg-primary;
+}
+.choices__inner {
+  @apply !rounded-lg !border-base-200 !bg-base-100;
+}
+.choices__list--multiple .choices__item {
+  @apply !border-primary !bg-primary;
+}
+.choices__input {
+  @apply !bg-transparent;
+}
+.html-render {
+  @apply text-justify;
+}
+.html-render figure {
+  @apply inline-block w-full py-5 text-center;
+}
+.html-render figure figcaption {
+  @apply mt-1 inline-block border border-primary-content bg-primary-content px-2 py-1;
+}
+.html-render p {
+  @apply mb-3;
+}
+.html-render img {
+  @apply mx-auto;
+}
+.html-render h1 {
+  @apply mb-7 mt-0 text-5xl text-primary;
+}
+.html-render h2 {
+  @apply mb-6 mt-0 text-4xl text-primary;
+}
+.html-render h3 {
+  @apply mb-5 mt-0 text-3xl text-primary;
+}
+.html-render h4 {
+  @apply mb-4 mt-0 text-2xl text-primary;
+}
+.html-render h5 {
+  @apply mb-4 mt-0 text-xl text-primary;
+}
+.html-render h6 {
+  @apply mb-4 mt-0 text-lg text-primary;
+}
+.html-render table {
+  @apply my-3 w-full;
+}
+.html-render table th,
+.html-render table td {
+  @apply py-1.5 border border-base-200 px-2 text-left;
+}
+.html-render blockquote {
+  @apply relative m-0 mx-auto mb-7 table border-0 p-4 text-justify text-inherit;
+  background: linear-gradient(to right, theme('textColor.primary') 2px, transparent 1px) 0 100%, linear-gradient(to left, theme('textColor.primary') 2px, transparent 1px) 100% 0, linear-gradient(to bottom, theme('textColor.primary') 2px, transparent 1px) 100% 0, linear-gradient(to top, theme('textColor.primary') 2px, transparent 1px) 0 100%;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+}
+.html-render blockquote:before,
+.html-render blockquote:after {
+  @apply absolute text-3xl font-black text-primary;
+  font-family: Line Awesome Free,
+        serif;
+}
+.html-render blockquote:before {
+  @apply -top-3 right-full -mr-3;
+  content: '"';
+}
+.html-render blockquote:after {
+  @apply -bottom-3 left-full top-auto -ml-3;
+  content: '"';
+}
+.hamburger {
+  @apply flex h-7 w-9 flex-col justify-between self-center pb-1 pt-1;
+}
+.hamburger span {
+  @apply h-0.5 w-full self-end bg-base-100 transition-all duration-300 ease-in-out;
+}
+.hamburger .meat {
+  @apply w-10/12 transition-all duration-150 ease-in-out;
+}
+.hamburger .bottom-bun {
+  @apply w-7/12;
+}
+.hamburger:hover span {
+  @apply w-full;
+}
+.hamburger.active .top-bun {
+  @apply translate-y-[0.6rem] w-full -rotate-45;
+}
+.hamburger.active .bottom-bun {
+  @apply -translate-y-[0.5rem] w-full rotate-45;
+}
+.hamburger.active .meat {
+  @apply w-0;
+}
+.hamburger.active:hover {
+  @apply transition-transform duration-300 ease-in-out hover:rotate-90;
+}
+.hamburger:not(.active):hover .top-bun {
+  @apply animate-burger-hover-2;
+}
+.hamburger:not(.active):hover .meat {
+  @apply animate-burger-hover-4;
+}
+.hamburger:not(.active):hover .bottom-bun {
+  @apply animate-burger-hover-6;
+}
+.hamburger-arrow {
+  @apply relative h-6 w-9;
+}
+.hamburger-arrow span {
+  @apply h-0.5 absolute left-0 w-full rounded-sm bg-base-100 transition-all duration-300 ease-in-out;
+}
+.hamburger-arrow span.top-bun {
+  @apply top-0;
+}
+.hamburger-arrow span.bottom-bun {
+  @apply bottom-0;
+}
+.hamburger-arrow.active span.top-bun {
+  @apply -translate-x-[0.13rem] -translate-y-[0.4rem] top-6 w-4 rotate-45;
+}
+.hamburger-arrow.active span.meat {
+  @apply w-3/4 rotate-180;
+}
+.hamburger-arrow.active span.bottom-bun {
+  @apply -translate-x-[0.13rem] translate-y-[0.55rem] bottom-6 w-4 -rotate-45;
+}
+.mega-menu {
+  @apply flex items-center gap-10;
+}
+.mega-menu > li > a {
+  @apply font-bold text-base-100 hover:text-primary-content;
+}
+.mega-menu > li > a:has(+ ul):after {
+  @apply !bg-base-100;
+}
+.mega-menu.col {
+  @apply flex-col gap-2;
+}
+.mega-menu.col > li {
+  @apply w-full;
+}
+.mega-menu.col > li > a:has(+ ul):after {
+  @apply rotate-0;
+}
+.mega-menu.col > li > ul {
+  @apply left-auto top-auto -mt-8 ml-80;
+}
+.mega-menu.col > li > ul.mega {
+  @apply left-auto;
+}
+.mega-menu.col > li:hover > ul {
+  @apply visible -mt-8 opacity-100;
+  margin-left: 19rem;
+}
+.mega-menu li {
+  @apply relative;
+}
+.mega-menu li > a {
+  @apply py-2.5 relative block;
+}
+.mega-menu li > a:has(+ ul) {
+  @apply pr-5;
+}
+.mega-menu li > a:has(+ ul)::after {
+  @apply size-3.5 absolute right-0 top-4 rotate-90 bg-base-content bg-cover;
+  content: '';
+  mask: url('/assets/images/arrow.svg') no-repeat 100% 100%;
+  mask-size: cover;
+}
+.mega-menu li > ul {
+  width: 150px;
+  @apply invisible fixed left-auto top-auto mt-2 rounded border-t-4 border-secondary bg-base-100 opacity-0 shadow transition-all duration-300 ease-in-out;
+}
+.mega-menu li > ul.mega {
+  @apply left-10 grid w-full max-w-6xl grid-cols-5;
+}
+.mega-menu li > ul.mega > li {
+  @apply p-2;
+}
+.mega-menu li > ul.mega > li > ul {
+  @apply static m-0 w-full rounded-none border-none bg-transparent opacity-100;
+}
+.mega-menu li > ul.mega > li > ul > li:not(:has(a)) {
+  @apply py-3 font-bold text-base-content/50;
+}
+.mega-menu li > ul a {
+  @apply text-base-content;
+}
+.mega-menu li > ul a:has(+ ul) {
+  @apply pr-0;
+}
+.mega-menu li > ul a:has(+ ul)::after {
+  @apply right-1 rotate-0;
+}
+.mega-menu li > ul ul {
+  @apply absolute top-0 ml-2 mt-0;
+  left: 101%;
+}
+.mega-menu li > ul > li {
+  @apply pl-3;
+}
+.mega-menu li:hover > ul {
+  @apply visible ml-0 mt-0 opacity-100;
+}
+.mega-menu li:hover > ul.mega ul {
+  @apply visible opacity-100;
+}
+form {
+  @apply m-10 grid gap-2 rounded-md bg-base-100 p-5 shadow md:p-10;
+}
+form > button[type='submit'] {
+  @apply p-2.5 rounded-lg border bg-primary text-primary-content;
+}
+form .radio {
+  @apply mb-2;
+}
+form .radio.pretty .state label:after {
+  @apply scale-50 rounded-full;
+}
+form .radio.pretty .state label:before {
+  @apply rounded-full;
+}
+form .radio.pretty input:checked ~ .state label:after {
+  @apply bg-primary;
+}
+form .checkbox {
+  @apply mb-2;
+}
+form .checkbox .state svg {
+  @apply absolute left-0 opacity-0;
+  z-index: 1;
+  width: calc(1em + 2px);
+  height: calc(1em + 2px);
+  top: calc((0% - (100% - 1em)) - 8%);
+}
+form .checkbox .state label:after,
+form .checkbox .state label:before {
+  @apply rounded;
+}
+form .checkbox input:checked ~ .state svg {
+  opacity: 1;
+}
+.header {
+  @apply sticky left-0 top-0 z-30;
+}
+.header > div {
+  @apply container mx-auto flex items-center justify-between bg-primary py-4 pl-5 pr-4;
+}
+.header > div .menu {
+  @apply hidden lg:block;
+}
+.header > div > div {
+  @apply flex items-center;
+}
+.pagination {
+  @apply mx-auto flex w-fit gap-2 py-4;
+}
+.pagination > a {
+  @apply flex size-10 items-center justify-center rounded-full border border-base-300 bg-base-100;
+}
+.pagination > a > svg {
+  @apply size-4;
+}
+.pagination > a:first-child {
+  @apply rotate-180;
+}
+.pagination > .active {
+  @apply bg-primary text-base-100;
+}
+.tooltip {
+  @apply absolute rounded bg-base-content px-2 py-1 text-sm text-base-100 opacity-0 transition-opacity duration-300 ease-in-out;
+}
+.tooltip.show {
+  @apply opacity-100;
+}
+.tooltip .arrow {
+  @apply absolute size-2 bg-base-content;
+}
+.dropdown {
+  @apply absolute flex w-44 flex-col rounded bg-base-content px-2 py-1 text-sm text-base-100 opacity-0 transition-opacity duration-300 ease-in-out;
+}
+.dropdown.show {
+  @apply opacity-100;
+}
+.dropdown .arrow {
+  @apply absolute size-2 bg-base-content;
+}
+.dropdown > a {
+  @apply px-2 py-1;
+}
