@@ -5,12 +5,13 @@ export const setupDropdown = () => {
   let isOpen = false;
   document.querySelectorAll('[data-dropdown]').forEach(button => {
     if (!(button instanceof HTMLButtonElement)) return false;
-    button.addEventListener('click', e => {
+    button.addEventListener('click', () => {
       if (isOpen) return false;
       if (!button.nextElementSibling) return false;
       dropdown = document.createElement('nav');
       dropdown.classList.add('dropdown');
-      const children = [...Array.from(button.nextElementSibling.children)];
+      if (!(button.nextElementSibling instanceof HTMLTemplateElement)) return false;
+      const children = [...Array.from(button.nextElementSibling.content.children)];
       children.forEach(child => {
         dropdown.appendChild(child.cloneNode(true));
       });
