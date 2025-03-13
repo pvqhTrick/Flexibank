@@ -1,37 +1,14 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-html {
-  @media only screen and (min-width: 768px) {
-    font-size: 18px;
-  }
-}
-body {
-  @apply bg-base-100 text-base-content;
-}
-.dropdown {
-  @apply absolute flex w-44 flex-col rounded bg-base-content px-2 py-1 text-sm text-base-100 opacity-0 transition-opacity duration-300 ease-in-out;
-
-  &.show {
-    @apply opacity-100;
-  }
-  .arrow {
-    @apply absolute size-2 bg-base-content;
-  }
-  > a {
-    @apply px-2 py-1;
-  }
-}
+@import './init.less';
 
 .main-header{
   @apply relative bg-white w-full;
 }
-//heeder-top
+/////////heeder-top
 .outer-container{
   @apply relative px-14;
 }
 .top-inner{
-  @apply relative w-full bg-[#f5f4f4] flex items-center justify-between pr-[30px];
+  @apply relative w-full bg-[#f5f4f4] flex items-center justify-between;
 }
 //left
 
@@ -63,18 +40,18 @@ body {
   @apply relative flex items-center;
 }
 .header-top .right-column .option-list{
-  @apply relative flex items-center;
+  @apply relative flex items-center pr-7 mr-7;
 }
 .header-top .right-column .option-list li{
   @apply relative flex items-center gap-2 mr-7 text-lg leading-7;
 }
 .header-top .right-column .language-box{
-  @apply relative flex items-center gap-2;
+  @apply relative flex items-center gap-2 mr-5;
 }
-//heeder-top
+////////heeder-top
 
-//header-lower
-.main-header .outer-box {
+////////header-lower
+.outer-box {
   @apply flex relative items-center justify-between;
 }
 .menu-area{
@@ -114,8 +91,136 @@ body {
 .side-panel {// thieu shadow
   @apply absolute w-96 bg-white opacity-0 invisible z-10 scale-y-0 origin-top transform top-24 right-0 p-6 px-8 pb-6 transition-all duration-500 ease-in-out;
 }
-//header-lower
+/////////header-lower
 
-//sticky-header
+/////////sticky-header
   
-//sticky-header
+/////////sticky-header
+
+/////////mobile-menu
+.mobile-menu{
+  @apply fixed right-0 top-0 w-72 max-w-full h-full pr-7 opacity-0 invisible z-50 transition-all duration-1000 ease-in-out; 
+}
+//mobile-menu
+
+//banner-section
+.banner-section{
+  @apply relative bg-[#646464];
+}
+
+.owl-carousel.owl-loaded {
+  @apply block;
+}
+//banner-section
+
+//main-footer
+.main-footer{
+  @apply relative bg-[#f5f4f4];
+}
+
+.main-footer .widget-section{
+  @apply relative pb-40 pt-32 border-b border-[#e2e0e0]
+  before:content-[''] before:absolute before:bg-[#e2e0e0] before:w-[1px] before:h-full before:left-1/2 before:top-0;
+}
+
+.auto-container{
+  @apply static max-w-6xl px-4 mx-auto;
+}
+.row{
+  @apply flex flex-wrap -mt-8 -mr-4 -ml-4;
+}
+.row > * {
+  @apply flex-shrink-0 w-full max-w-full px-4 mt-4;
+} 
+.footer-column{
+  @apply flex-none lg:w-1/2 md:w-full sm:w-full ;
+}
+.footer-column .footer-widget{
+  @apply lg:mr-24 sm:mt-0 md:mt-0;
+}
+.footer-column-haft{
+  @apply flex-none lg:w-1/4 md:w-1/2 sm:w-full;
+}
+.footer-column-haft{
+  @apply flex-none lg:w-1/4 md:w-1/2 sm:w-full;
+}
+.footer-column-haft .footer-widget{
+  @apply lg:ml-20 sm:mt-0 md:mt-0;;
+}
+
+.contact-widget .certified-box {
+  @apply relative bg-[#550401] pt-5 pr-5 pb-4 pl-28 mb-10;
+}
+.contact-widget .certified-box h4{
+  @apply text-xl leading-6 text-white mb-2 max-w-80;
+}
+.contact-widget .certified-box span{
+  @apply relative block text-white/50;
+}
+.contact-widget .certified-box .image-box{
+  @apply absolute left-7 top-6;
+}
+
+.contact-info h3{
+  @apply relative block text-2xl mb-5;
+}
+
+.widget-content .schedule-inner{
+  @apply relative flex  items-center justify-between mb-7;
+}
+.widget-content .schedule-inner h3{
+  @apply relative block text-2xl mb-5;
+}
+.widget-content .schedule-inner ul li{
+  @apply relative block text-[#1e242a] mb-4;
+}
+.widget-content .schedule-inner ul li a{ 
+  @apply inline-block text-[#1e242a];
+}
+.widget-content .schedule-inner ul li span{ 
+  @apply text-[#8d8b8b];
+}
+.widget-content .support-box{
+  @apply relative block pl-14;
+}
+.widget-content .support-box .icon-box{
+  @apply absolute inline-block left-0 top-2 w-11 h-11 leading-10 border border-[#e2e0e0] rounded-full text-center;
+}
+.widget-content .support-box .icon-box img{
+  @apply inline-block max-w-full h-auto transition-all duration-700 ease-in-out delay-100;
+}
+.widget-content .support-box .link-box{
+  @apply absolute top-5 right-0;
+}
+.widget-content .support-box .link-box a{
+  @apply relative inline-block text-2xl text-[#1e242a];
+}
+.widget-content .support-box .link-box svg{
+  @apply w-6 h-6;
+}
+
+.widget-title {
+  @apply relative block mb-5;
+}
+
+.links-widget .links-list li{
+  @apply relative block mb-3;
+}
+.links-widget .links-list li a {
+  @apply relative inline-block text-base leading-6 text-[#545151] pr-5
+          hover:text-red-500;
+}
+//fotter-bottom
+.bottom-top{
+  @apply relative block w-full bg-[#eaeaea] px-20 py-5 -mt-9 z-10;
+}
+.bottom-top .list-item{
+  @apply relative flex items-center justify-between;
+}
+.bottom-top .list-item li{
+  @apply relative inline-block py-2 pl-14;
+}
+.bottom-inner{
+
+}
+//////main-footer 
