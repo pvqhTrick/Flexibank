@@ -220,7 +220,45 @@
 .bottom-top .list-item li{
   @apply relative inline-block py-2 pl-14;
 }
-.bottom-inner{
+.footer-bottom .bottom-inner {
+  @apply relative pt-12 pb-11 flex items-center justify-between;
+}
+.social-box span {
+  @apply relative block mb-3;
+}
+.social-box .social-links {
+  @apply relative flex items-center;
+}
+.social-box .social-links li {
+  @apply relative inline-block mr-1;
+}
+.social-box .social-links li a {
+  @apply relative inline-block w-11 h-11 leading-10 bg-[#eaeaea] text-center text-xl text-[#1e242a];
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  line-height: 51px;
+  background: #eaeaea;
+  text-align: center;
+  font-size: 20px;
+  color: var(--title-color);
+}
+.footer-logo {
+  @apply relative block items-center;
+}
+.footer-logo .logo {
+  @apply relative block mb-4;
+}
+.footer-nav li{
+  @apply relative inline-block ml-6 first:ml-0;
+}
+.footer-nav li a {
+  @apply inline-block text-[#545151];
+}
 
+
+.main-footer .footer-bottom .copyright p a {
+  @apply text-red-600;
 }
 //////main-footer 
