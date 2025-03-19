@@ -112,6 +112,90 @@
   @apply block;
 }
 //banner-section
+///////////online-service
+.inner-container {
+  @apply relative block z-10 flex items-end;
+}
+.online-service .inner-container {
+  @apply relative before:absolute before:content-[''] before:bg-[#f5f4f4] before:w-[5000px] before:h-full before:top-0 before:right-0 before:-z-10;
+}
+.online-service .left-column, 
+.online-service .right-column {
+  @apply flex-none lg:w-6/12 md:w-full sm:w-full px-4;
+}
+.online-service .left-content {
+  @apply relative py-8 flex items-center justify-between -ml-48;
+}
+.online-service .left-content .info-box{
+  @apply relative block pl-16 pt-0 pr-0;
+}
+.online-service .left-content .btn-box{
+  @apply relative flex items-center;
+}
+.online-service .left-content .btn-box a.play-store {
+  @apply text-lg leading-7 font-bold text-[#1e242a] capitalize px-7 py-3 mr-5 border-2 border-red-500 flex hover:text-white hover:bg-red-500;
+}
+.online-service .left-content .btn-box a.play-store svg {
+  @apply text-lg hover:text-white hover:bg-red-500;
+}
+.online-service .left-content .btn-box a.apple-store {
+  @apply text-lg leading-7 font-bold text-white bg-red-500 capitalize px-7 py-3 border-2 border-red-500 flex hover:bg-white hover:text-red-500;
+}
+.online-service .left-content .info-box .icon-box {
+  @apply absolute inline-block left-0 top-1 w-12 h-12 leading-10 bg-white text-center rounded-full;
+}
+.online-service .left-content .info-box h4 {
+  @apply block text-lg leading-7 mb-0;
+}
+.online-service .right-content{
+  @apply relative -mt-52 bg-white;
+}
+.online-service .right-content .image-column{
+  @apply flex-none lg:w-1/2 md:w-full sm:w-full;
+}
+
+.online-service .right-content .image-box {
+  @apply relative block;
+}
+.online-service .right-content .image-box img {
+  @apply !w-full;
+}
+.online-service .right-content .content-column{
+  @apply flex-none lg:w-1/2 md:w-full sm:w-full;
+}
+.online-service .right-content .content-column .content-box{
+  @apply relative -ml-8;
+}
+.online-service .right-content .content-box h4 {
+  @apply relative block text-center text-lg leading-normal font-bold text-white bg-red-500 py-3 px-4 
+  before:absolute before:content-[''] before:bg-white before:w-3 before:h-3 before:left-1/2 before:-ml-2 before:bottom-0 before:[clip-path:polygon(0%_0%,50%_0%,100%_100%,0%_100%,50%_0%)];
+}
+.online-service .right-content .content-box h4 {
+  @apply relative block items-center text-xl text-white font-bold px-3 py-4;
+}
+.online-service .right-content .content-box .service-list {
+  @apply relative py-5 px-5;
+}
+.online-service .right-content .content-box .service-list li {
+  @apply relative block mb-3;
+}
+.online-service .right-content .content-box .service-list li a{
+  @apply relative block text-lg leading-7 font-bold text-gray-800 bg-white rounded-full shadow-lg px-4 py-3 pl-5;
+}
+.online-service .right-content .content-box .service-list li a svg {
+  @apply absolute inline-block top-4 right-4 w-4 h-4 leading-10 bg-gray-200 text-center rounded-full text-lg text-gray-500;
+}
+.online-service .right-content .content-box .link-box {
+  @apply relative block bg-[#f5f4f4] px-4 py-4 text-center; 
+}
+.online-service .right-content .content-box .link-box a {
+  @apply relative inline-block text-base font-bold text-[#1e242a];
+}
+.online-service .right-content .content-box .link-box a span {
+  @apply text-red-500 mr-2 relative inline-block text-2xl font-normal;
+}
+///////////online-service
+
 
 //main-footer
 .main-footer{
@@ -123,14 +207,12 @@
   before:content-[''] before:absolute before:bg-[#e2e0e0] before:w-[1px] before:h-full before:left-1/2 before:top-0;
 }
 
-.auto-container{
-  @apply static max-w-6xl px-4 mx-auto;
-}
-.row{
-  @apply flex flex-wrap -mt-8 -mr-4 -ml-4;
+
+.row{//mt-8
+  @apply flex flex-wrap -mt-0 -mr-4 -ml-4;
 }
 .row > * {
-  @apply flex-shrink-0 w-full max-w-full px-4 mt-4;
+  @apply flex-shrink-0 w-full max-w-full px-4 mt-0;
 } 
 .footer-column{
   @apply flex-none lg:w-1/2 md:w-full sm:w-full ;
@@ -219,6 +301,12 @@
 }
 .bottom-top .list-item li{
   @apply relative inline-block py-2 pl-14;
+}
+.bottom-top .list-item li .icon-box {
+  @apply absolute left-0 top-0 inline-block w-11 h-11 leading-10 border border-[#d5d5d5] rounded-full text-center;
+}
+.bottom-top .list-item li .icon-box img {
+  @apply inline-block max-w-full h-auto transition-all duration-700 ease-in-out delay-100;
 }
 .footer-bottom .bottom-inner {
   @apply relative pt-12 pb-11 flex items-center justify-between;
