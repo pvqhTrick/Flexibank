@@ -15,12 +15,25 @@ export const setupSwiper = () => {
       slideChangeTransitionStart: (el: any) => animationSlide(el.slides[el.activeIndex], 0),
     },
     autoplay: {
-      delay: 5000,
+      delay: 5000000,
     },
   };
-  new Swiper('.mySwiper', {
+  new Swiper('.bank-service-swiper', {
     ...defaultSetting,
-    slidesPerView: 1,
+    breakpoints: {
+      1366: {
+        slidesPerView: 4,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      500: {
+        slidesPerView: 1,
+      },
+    },
   });
 
   // Swiper('.swiper-section-contact', {

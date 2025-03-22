@@ -171,16 +171,16 @@
   before:absolute before:content-[''] before:bg-white before:w-3 before:h-3 before:left-1/2 before:-ml-2 before:bottom-0 before:[clip-path:polygon(0%_0%,50%_0%,100%_100%,0%_100%,50%_0%)];
 }
 .online-service .right-content .content-box h4 {
-  @apply relative block items-center text-xl text-white font-bold px-3 py-4;
+  @apply relative block items-center text-xl text-white font-bold px-3 py-2;
 }
 .online-service .right-content .content-box .service-list {
-  @apply relative py-5 px-5;
+  @apply relative py-4 px-4;
 }
 .online-service .right-content .content-box .service-list li {
   @apply relative block mb-3;
 }
 .online-service .right-content .content-box .service-list li a{
-  @apply relative block text-lg leading-7 font-bold text-gray-800 bg-white rounded-full shadow-lg px-4 py-3 pl-5;
+  @apply relative block text-lg leading-7 font-bold text-gray-800 bg-white rounded-full shadow-lg px-4 py-2 pl-5;
 }
 .online-service .right-content .content-box .service-list li a svg {
   @apply absolute inline-block top-4 right-4 w-4 h-4 leading-10 bg-gray-200 text-center rounded-full text-lg text-gray-500;
@@ -196,6 +196,94 @@
 }
 ///////////online-service
 
+///////////banking-service
+.sec-pad{
+  @apply pt-32 pb-32;
+}
+.sec-title {
+  @apply relative block mb-12 text-center;
+}
+.sec-title .sub-title {
+  @apply relative inline-block text-sm leading-6 font-bold uppercase text-red-500 pl-8 mb-3;
+}
+.sec-title h2 {
+  @apply block text-5xl;
+}
+
+.tab-btn-box{
+  @apply h-96 w-full h-auto mb-16;
+}
+.swiper-slide {
+  @apply align-middle text-lg bg-[#fff] flex justify-center items-center;
+}
+.swiper-slide .tab-btn{
+  @apply relative block bg-white pt-14 pr-5 pb-8 pl-5 border-r border-gray-300 cursor-pointer;
+}
+.swiper-slide .tab-btn .icon-box{
+  @apply relative inline-block w-16 h-16 leading-10 text-center rounded-full z-10 mb-10
+    before:absolute before:content-[''] before:bg-gray-100 before:w-28 before:h-28 before:-left-5 before:-top-5 before:rounded-full before:-z-10 before:transition-all before:duration-500
+    after:absolute after:content-[''] after:w-16 after:h-16 after:bg-white after:shadow-lg after:rounded-full after:left-0 after:top-0 after:-z-10;
+}
+.banking-service .tab-btn h3 {
+  @apply block text-base mb-2; 
+}
+.banking-service .tab-btn p{
+  @apply block text-base; 
+}
+.tabs-content .tab{
+  @apply hidden;
+}
+.tabs-content .active-tab{
+  @apply block;
+}
+.tabs-content .tab .image-column,
+.tabs-content .tab .content-column{
+   @apply xl:w-1/2 md:w-full sm:w-full;
+}
+.tabs-content .tab .image-column .image-box{
+  @apply relative block mr-8;
+}
+.tabs-content .tab .image-column .image-box img {
+  @apply w-full;
+}
+.tabs-content .tab .content-column .content-box{
+  @apply relative block mr-12;
+}
+.banking-service .content-box h3 {
+  @apply relative block text-xl mb-5;
+}
+.banking-service .content-box p {
+  @apply mb-7;
+}
+.banking-service .content-box .inner-box {
+  @apply relative block pr-72 mb-10;
+}
+.banking-service .content-box .inner-box h6 {
+  @apply block text-sm text-red-500 mb-3 uppercase;
+}
+.banking-service .content-box .inner-box .list-style-one li {
+  @apply min-h-11;
+}
+.banking-service .content-box .inner-box .inner {
+  @apply absolute top-0 right-0 w-52 bg-white px-6 py-6;
+}
+.banking-service .content-box .inner-box .inner .icon-box {
+  @apply relative inline-block mb-3;
+}
+.banking-service .content-box .inner-box .inner h4 {
+  @apply block text-xl mb-1;
+}
+.banking-service .content-box .inner-box .inner h6 {
+  @apply block text-sm text-red-500 uppercase mb-4;
+}
+.banking-service .content-box .inner-box .inner .theme-btn {
+  @apply w-full py-3 px-7 relative inline-block overflow-hidden align-middle text-lg leading-6 font-bold bg-red-500 text-white !text-center px-[29px] py-[16px] capitalize z-10 transition-all duration-500 ease-in-out;  
+}
+
+.banking-service .content-box .lower-text {
+  @apply relative block pl-6;
+}
+///////////banking-service
 
 //main-footer
 .main-footer{

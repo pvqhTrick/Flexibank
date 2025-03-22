@@ -24,12 +24,12 @@ const Theme = (() => {
     init: () => {
       // console.log('init');
       (<any>window).API = API;
-      setupDropdown();
-      setupEchart();
+      // setupDropdown();
+      // setupEchart();
       setupMenuMobile(document.getElementsByClassName('handle-menu'));
       (<any>window).Message = Message;
       setupSwiper();
-      setupTooltip();
+      // setupTooltip();
 
       setupFormValid();
       (<any>window).SetupFormValid = setupFormValid;
