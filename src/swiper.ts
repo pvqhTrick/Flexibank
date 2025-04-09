@@ -1,3 +1,4 @@
+
 import { animationSlide } from './gasp';
 
 export const setupSwiper = () => {
@@ -20,6 +21,32 @@ export const setupSwiper = () => {
   };
   new Swiper('.bank-service-swiper', {
     ...defaultSetting,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      1366: {
+        slidesPerView: 4,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      500: {
+        slidesPerView: 1,
+      },
+    },
+  });
+
+  new Swiper('.secure-growth-swiper',{
+    ...defaultSetting,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
     breakpoints: {
       1366: {
         slidesPerView: 4,

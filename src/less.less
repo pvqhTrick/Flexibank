@@ -1,440 +1,275 @@
-@import './init.less';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-.main-header{
-  @apply relative bg-white w-full;
-}
-/////////heeder-top
-.outer-container{
-  @apply relative px-14;
-}
-.top-inner{
-  @apply relative w-full bg-[#f5f4f4] flex items-center justify-between;
-}
-//left
+@import url("layout.less");
 
-.header-top .info-list{
-  @apply relative flex items-center ;
-}
-.header-top .info-list li{
-  @apply first:before:content-[''] first:before:absolute first:before:-right-4 first:before:top-1/2 first:before:w-[1px] first:before:h-full first:before:bg-black first:before:-translate-y-1/2;
-}
-.header-top .looking-box{// thieu after tam giac mau do
-  @apply bg-red-600 lg:px-[30px] lg:py-[17px] flex items-center lg:mr-8 gap-2;
-        // relative after:content-[''] after:absolute after:bg-[var(--theme-color)] after:w-[25px] after:h-[25px] after:right-0 after:bottom-[-25px] after:clip-path-[polygon(0%_0%,100%_0%,100%_100%,100%_100%,0%_0%)];
-}
-.header-top .looking-box h5{
-  @apply text-white;
-}
-.header-top .looking-box .current span{
-  @apply text-white;
-}
-.header-top .login-box, 
-            .mail-box{
-  @apply box-border border-0 border-solid border-[#e5e7eb] items-center flex mr-7 gap-3; 
+html {
+  @media only screen and (min-width: 768px) {
+    font-size: 16px;
+  }
 }
 
+body {
+  @apply bg-base-100 text-base-content;
+}
 
+.boxed_wrapper {
+  @apply flex flex-col;
+}
 
-//right
-.header-top .right-column{
-  @apply relative flex items-center;
+h1,
+h2,
+h3,
+h4 {
+  @apply relative font-bold text-xl transition-all duration-500 ease-in;
 }
-.header-top .right-column .option-list{
-  @apply relative flex items-center pr-7 mr-7;
-}
-.header-top .right-column .option-list li{
-  @apply relative flex items-center gap-2 mr-7 text-lg leading-7;
-}
-.header-top .right-column .language-box{
-  @apply relative flex items-center gap-2 mr-5;
-}
-////////heeder-top
 
-////////header-lower
+ul,
+li {
+  @apply list-none px-0 py-0 mx-0 my-0;
+}
+
+.centred {
+  @apply text-center;
+}
+.flex-center() {
+  @apply flex items-center justify-center;
+}
+.dropdown {
+  @apply absolute flex w-44 flex-col rounded bg-base-content px-2 py-1 text-sm text-base-100 opacity-0 transition-opacity duration-300 ease-in-out;
+
+  &.show {
+    @apply opacity-100;
+  }
+
+  .arrow {
+    @apply absolute size-2 bg-base-content;
+  }
+
+  >a {
+    @apply px-2 py-1;
+  }
+}
+
+.auto-container {
+  @apply static max-w-6xl px-4 mx-auto;
+}
+
+svg {
+  @apply w-4 h-4;
+}
+
+img {
+  @apply inline-block max-w-full h-auto transition-all duration-700 delay-100 ease-in-out;
+}
+.row {
+  //mt-8
+  @apply flex flex-wrap -mt-0 -mr-4 -ml-4;
+}
+
+.row>* {
+  @apply flex-shrink-0 w-full max-w-full px-4 mt-0;
+}
+// img, svg {
+//     @apply align-middle;
+// }
+// .row > * {
+//     @apply flex-shrink-0 w-full max-w-full px-4 mt-4;
+// }
+.hover-1 {
+  @apply hover:text-white hover:bg-red-500;
+}
+
 .outer-box {
   @apply flex relative items-center justify-between;
-}
-.menu-area{
-  @apply flex relative items-center;
-}
-.menu-area .mobile-nav-toggler{
-  @apply relative float-right text-4xl leading-10 cursor-pointer bg-[#550401] hidden;
-}
-
-.menu-area .main-menu{
-  @apply float-left;
-}
-
-.menu-right-content{
-  @apply flex relative items-center justify-between;
-}
-
-.menu-right-content .search-box{
-  @apply relative flex items-center gap-2 text-lg text-[#a8a7a7] cursor-pointer pr-8 mr-8
-  before:content-[''] before:absolute before:-right-4 before:top-1/2 first:before:w-[1px] first:before:h-full first:before:bg-black first:before:-translate-y-1/2;
-  ;
-}
-
-.menu-right-content .support-box{
-  @apply relative flex items-center gap-2 mr-12
-  before:content-[''] before:absolute before:bg-[#1da630] before:w-3 before:h-3 before:rounded-full before:border-[3px] before:border-[#a5dbac] before:-top-1 before:-right-4;
-}
-.menu-right-content .theme-btn{
-  @apply relative inline-block overflow-hidden align-middle text-lg leading-6 font-bold bg-red-500 text-white !text-center px-[29px] py-[16px] capitalize z-10 transition-all duration-500 ease-in-out;
-}
-.menu-right-content .nav-toggler .side-panel-btn{ //,leading chua dung duoc dang custom
-  @apply relative inline-block w-14 h-14 leading-10 border border-[#e6e4e4] cursor-pointer text-center transition-all duration-500 ease-in-out;
-}
-.menu-right-content .nav-toggler .side-panel-btn img{
-  @apply inline-block max-w-full h-auto transition-all duration-700 ease-in-out delay-100;
-}
-.side-panel {// thieu shadow
-  @apply absolute w-96 bg-white opacity-0 invisible z-10 scale-y-0 origin-top transform top-24 right-0 p-6 px-8 pb-6 transition-all duration-500 ease-in-out;
-}
-/////////header-lower
-
-/////////sticky-header
-  
-/////////sticky-header
-
-/////////mobile-menu
-.mobile-menu{
-  @apply fixed right-0 top-0 w-72 max-w-full h-full pr-7 opacity-0 invisible z-50 transition-all duration-1000 ease-in-out; 
-}
-//mobile-menu
-
-//banner-section
-.banner-section{
-  @apply relative bg-[#646464];
 }
 
 .owl-carousel.owl-loaded {
   @apply block;
 }
-//banner-section
-///////////online-service
-.inner-container {
-  @apply relative block z-10 flex items-end;
-}
-.online-service .inner-container {
-  @apply relative before:absolute before:content-[''] before:bg-[#f5f4f4] before:w-[5000px] before:h-full before:top-0 before:right-0 before:-z-10;
-}
-.online-service .left-column, 
-.online-service .right-column {
-  @apply flex-none lg:w-6/12 md:w-full sm:w-full px-4;
-}
-.online-service .left-content {
-  @apply relative py-8 flex items-center justify-between -ml-48;
-}
-.online-service .left-content .info-box{
-  @apply relative block pl-16 pt-0 pr-0;
-}
-.online-service .left-content .btn-box{
-  @apply relative flex items-center;
-}
-.online-service .left-content .btn-box a.play-store {
-  @apply text-lg leading-7 font-bold text-[#1e242a] capitalize px-7 py-3 mr-5 border-2 border-red-500 flex hover:text-white hover:bg-red-500;
-}
-.online-service .left-content .btn-box a.play-store svg {
-  @apply text-lg hover:text-white hover:bg-red-500;
-}
-.online-service .left-content .btn-box a.apple-store {
-  @apply text-lg leading-7 font-bold text-white bg-red-500 capitalize px-7 py-3 border-2 border-red-500 flex hover:bg-white hover:text-red-500;
-}
-.online-service .left-content .info-box .icon-box {
-  @apply absolute inline-block left-0 top-1 w-12 h-12 leading-10 bg-white text-center rounded-full;
-}
-.online-service .left-content .info-box h4 {
-  @apply block text-lg leading-7 mb-0;
-}
-.online-service .right-content{
-  @apply relative -mt-52 bg-white;
-}
-.online-service .right-content .image-column{
-  @apply flex-none lg:w-1/2 md:w-full sm:w-full;
-}
 
-.online-service .right-content .image-box {
-  @apply relative block;
-}
-.online-service .right-content .image-box img {
-  @apply !w-full;
-}
-.online-service .right-content .content-column{
-  @apply flex-none lg:w-1/2 md:w-full sm:w-full;
-}
-.online-service .right-content .content-column .content-box{
-  @apply relative -ml-8;
-}
-.online-service .right-content .content-box h4 {
-  @apply relative block text-center text-lg leading-normal font-bold text-white bg-red-500 py-3 px-4 
-  before:absolute before:content-[''] before:bg-white before:w-3 before:h-3 before:left-1/2 before:-ml-2 before:bottom-0 before:[clip-path:polygon(0%_0%,50%_0%,100%_100%,0%_100%,50%_0%)];
-}
-.online-service .right-content .content-box h4 {
-  @apply relative block items-center text-xl text-white font-bold px-3 py-2;
-}
-.online-service .right-content .content-box .service-list {
-  @apply relative py-4 px-4;
-}
-.online-service .right-content .content-box .service-list li {
-  @apply relative block mb-3;
-}
-.online-service .right-content .content-box .service-list li a{
-  @apply relative block text-lg leading-7 font-bold text-gray-800 bg-white rounded-full shadow-lg px-4 py-2 pl-5;
-}
-.online-service .right-content .content-box .service-list li a svg {
-  @apply absolute inline-block top-4 right-4 w-4 h-4 leading-10 bg-gray-200 text-center rounded-full text-lg text-gray-500;
-}
-.online-service .right-content .content-box .link-box {
-  @apply relative block bg-[#f5f4f4] px-4 py-4 text-center; 
-}
-.online-service .right-content .content-box .link-box a {
-  @apply relative inline-block text-base font-bold text-[#1e242a];
-}
-.online-service .right-content .content-box .link-box a span {
-  @apply text-red-500 mr-2 relative inline-block text-2xl font-normal;
-}
-///////////online-service
-
-///////////banking-service
-.sec-pad{
+.sec-pad {
   @apply pt-32 pb-32;
 }
+
 .sec-title {
   @apply relative block mb-12 text-center;
+
+  .sub-title {
+    @apply relative inline-block text-sm leading-6 font-bold uppercase text-red-500 pl-8 mb-3;
+  }
+
+  h2 {
+    @apply block text-5xl;
+  }
 }
-.sec-title .sub-title {
-  @apply relative inline-block text-sm leading-6 font-bold uppercase text-red-500 pl-8 mb-3;
+
+.tab-btn-common() {
+  @apply relative block bg-white pt-14 pr-5 pb-8 pl-5 border-r border-gray-300 cursor-pointer;
 }
-.sec-title h2 {
+
+.icon-box-common() {
+  @apply relative inline-flex items-center justify-center w-16 h-16 text-center rounded-full z-10 mb-10;
+
+  @apply before:absolute before:content-[''] before:bg-gray-100 before:w-28 before:h-28 before:rounded-full before:-z-10 before:transition-all before:duration-500 before:flex before:items-center before:justify-center;
+
+  @apply after:absolute after:content-[''] after:w-16 after:h-16 after:bg-white after:shadow-lg after:rounded-full after:-z-10 after:flex after:items-center after:justify-center;
+}
+
+.column-half() {
+  @apply xl:w-1/2 md:w-full sm:w-full;
+}
+
+.text-title() {
+  @apply block text-base mb-2;
+}
+
+.text-paragraph() {
+  @apply block text-base;
+}
+
+.content-inner-box() {
+  @apply relative block pr-72 mb-10;
+}
+
+.icon-box-list() {
+  @apply absolute inline-block w-11 h-11 leading-10 bg-[#f5f4f4] text-center left-0 top-1 rounded-full;
+}
+
+
+.heading-title() {
+  @apply relative block text-xl mb-5;
+}
+
+.tab-btn-box {
+  @apply w-full h-auto mb-16 shadow-2xl text-center;
+}
+
+.swiper-slide {
+  @apply align-middle text-lg bg-[#fff] flex justify-center items-center;
+
+  .tab-btn {
+    .tab-btn-common();
+
+    .icon-box {
+      .icon-box-common();
+    }
+
+    h3 {
+      .text-title();
+    }
+
+    p {
+      .text-paragraph();
+    }
+  }
+}
+.footer-column-haft {
+  @apply flex-none lg:w-1/4 md:w-1/2 sm:w-full;
+}
+.tabs-content {
+  .tab {
+    @apply hidden;
+
+    .image-column {
+      .column-half();
+
+      .image-box {
+        @apply relative block mr-8;
+
+        img {
+          @apply w-full;
+        }
+      }
+    }
+
+    .content-column {
+      .column-half();
+
+      .content-box {
+        @apply relative block mr-12;
+      }
+    }
+  }
+
+  // .active-tab {
+  //   display: block;
+  // }
+}
+.list-style-one li .icon-box {
+  .icon-box-list();
+}
+
+
+
+// MIXINS
+.paragraph() {
+  @apply mb-7;
+}
+
+.inner-box-style() {
+  @apply relative block pr-72 mb-10;
+}
+
+.inner-heading() {
+  @apply block text-sm text-red-500 mb-3 uppercase;
+}
+
+.inner-content-box() {
+  @apply absolute top-0 right-0 w-52 bg-white px-6 py-6;
+}
+
+.list-style-item() {
+  @apply relative block text-base font-medium text-[#1e242a] mb-4 pl-16;
+}
+
+.icon-box-list() {
+  @apply absolute inline-block w-11 h-11 leading-10 bg-[#f5f4f4] text-center left-0 top-1 rounded-full;
+}
+
+.icon-box-inner() {
+  @apply relative inline-block mb-3;
+}
+
+.inner-h4-title() {
+  @apply block text-xl mb-1;
+}
+
+.inner-h6-style() {
+  @apply block text-sm text-red-500 uppercase mb-4;
+}
+
+.theme-button() {
+  @apply w-full py-3 px-7 relative inline-block overflow-hidden align-middle text-lg leading-6 font-bold bg-red-500 text-white !text-center px-[29px] py-[16px] capitalize z-10 transition-all duration-500 ease-in-out;
+}
+
+.lower-text-style() {
+  @apply relative block pl-6;
+}
+
+//secure-growth
+.section-padding() {
+  @apply bg-[#f5f4f4] py-28 px-0;
+}
+
+.section-title() {
+  @apply relative block mb-12;
+}
+
+.sub-title-style() {
+  @apply relative inline-block text-sm font-bold uppercase text-red-500 pl-7 mb-3;
+}
+
+.title-h2() {
   @apply block text-5xl;
 }
 
-.tab-btn-box{
-  @apply h-96 w-full h-auto mb-16;
-}
-.swiper-slide {
-  @apply align-middle text-lg bg-[#fff] flex justify-center items-center;
-}
-.swiper-slide .tab-btn{
-  @apply relative block bg-white pt-14 pr-5 pb-8 pl-5 border-r border-gray-300 cursor-pointer;
-}
-.swiper-slide .tab-btn .icon-box{
-  @apply relative inline-block w-16 h-16 leading-10 text-center rounded-full z-10 mb-10
-    before:absolute before:content-[''] before:bg-gray-100 before:w-28 before:h-28 before:-left-5 before:-top-5 before:rounded-full before:-z-10 before:transition-all before:duration-500
-    after:absolute after:content-[''] after:w-16 after:h-16 after:bg-white after:shadow-lg after:rounded-full after:left-0 after:top-0 after:-z-10;
-}
-.banking-service .tab-btn h3 {
-  @apply block text-base mb-2; 
-}
-.banking-service .tab-btn p{
-  @apply block text-base; 
-}
-.tabs-content .tab{
-  @apply hidden;
-}
-.tabs-content .active-tab{
-  @apply block;
-}
-.tabs-content .tab .image-column,
-.tabs-content .tab .content-column{
-   @apply xl:w-1/2 md:w-full sm:w-full;
-}
-.tabs-content .tab .image-column .image-box{
-  @apply relative block mr-8;
-}
-.tabs-content .tab .image-column .image-box img {
-  @apply w-full;
-}
-.tabs-content .tab .content-column .content-box{
-  @apply relative block mr-12;
-}
-.banking-service .content-box h3 {
-  @apply relative block text-xl mb-5;
-}
-.banking-service .content-box p {
-  @apply mb-7;
-}
-.banking-service .content-box .inner-box {
-  @apply relative block pr-72 mb-10;
-}
-.banking-service .content-box .inner-box h6 {
-  @apply block text-sm text-red-500 mb-3 uppercase;
-}
-.banking-service .content-box .inner-box .list-style-one li {
-  @apply min-h-11;
-}
-.banking-service .content-box .inner-box .inner {
-  @apply absolute top-0 right-0 w-52 bg-white px-6 py-6;
-}
-.banking-service .content-box .inner-box .inner .icon-box {
-  @apply relative inline-block mb-3;
-}
-.banking-service .content-box .inner-box .inner h4 {
-  @apply block text-xl mb-1;
-}
-.banking-service .content-box .inner-box .inner h6 {
-  @apply block text-sm text-red-500 uppercase mb-4;
-}
-.banking-service .content-box .inner-box .inner .theme-btn {
-  @apply w-full py-3 px-7 relative inline-block overflow-hidden align-middle text-lg leading-6 font-bold bg-red-500 text-white !text-center px-[29px] py-[16px] capitalize z-10 transition-all duration-500 ease-in-out;  
+
+.white-box-style() {
+  @apply absolute bg-white w-auto h-full top-0 right-0 -z-10 shadow-2xl;
 }
 
-.banking-service .content-box .lower-text {
-  @apply relative block pl-6;
+.red-box-style() {
+  @apply absolute content-[''] w-auto h-auto top-5 right-2 border-2 border-red-500 border-solid bg-transparent -z-20 transition-all delay-500 ease-in;
 }
-///////////banking-service
-
-//main-footer
-.main-footer{
-  @apply relative bg-[#f5f4f4];
-}
-
-.main-footer .widget-section{
-  @apply relative pb-40 pt-32 border-b border-[#e2e0e0]
-  before:content-[''] before:absolute before:bg-[#e2e0e0] before:w-[1px] before:h-full before:left-1/2 before:top-0;
-}
-
-
-.row{//mt-8
-  @apply flex flex-wrap -mt-0 -mr-4 -ml-4;
-}
-.row > * {
-  @apply flex-shrink-0 w-full max-w-full px-4 mt-0;
-} 
-.footer-column{
-  @apply flex-none lg:w-1/2 md:w-full sm:w-full ;
-}
-.footer-column .footer-widget{
-  @apply lg:mr-24 sm:mt-0 md:mt-0;
-}
-.footer-column-haft{
-  @apply flex-none lg:w-1/4 md:w-1/2 sm:w-full;
-}
-.footer-column-haft{
-  @apply flex-none lg:w-1/4 md:w-1/2 sm:w-full;
-}
-.footer-column-haft .footer-widget{
-  @apply lg:ml-20 sm:mt-0 md:mt-0;;
-}
-
-.contact-widget .certified-box {
-  @apply relative bg-[#550401] pt-5 pr-5 pb-4 pl-28 mb-10;
-}
-.contact-widget .certified-box h4{
-  @apply text-xl leading-6 text-white mb-2 max-w-80;
-}
-.contact-widget .certified-box span{
-  @apply relative block text-white/50;
-}
-.contact-widget .certified-box .image-box{
-  @apply absolute left-7 top-6;
-}
-
-.contact-info h3{
-  @apply relative block text-2xl mb-5;
-}
-
-.widget-content .schedule-inner{
-  @apply relative flex  items-center justify-between mb-7;
-}
-.widget-content .schedule-inner h3{
-  @apply relative block text-2xl mb-5;
-}
-.widget-content .schedule-inner ul li{
-  @apply relative block text-[#1e242a] mb-4;
-}
-.widget-content .schedule-inner ul li a{ 
-  @apply inline-block text-[#1e242a];
-}
-.widget-content .schedule-inner ul li span{ 
-  @apply text-[#8d8b8b];
-}
-.widget-content .support-box{
-  @apply relative block pl-14;
-}
-.widget-content .support-box .icon-box{
-  @apply absolute inline-block left-0 top-2 w-11 h-11 leading-10 border border-[#e2e0e0] rounded-full text-center;
-}
-.widget-content .support-box .icon-box img{
-  @apply inline-block max-w-full h-auto transition-all duration-700 ease-in-out delay-100;
-}
-.widget-content .support-box .link-box{
-  @apply absolute top-5 right-0;
-}
-.widget-content .support-box .link-box a{
-  @apply relative inline-block text-2xl text-[#1e242a];
-}
-.widget-content .support-box .link-box svg{
-  @apply w-6 h-6;
-}
-
-.widget-title {
-  @apply relative block mb-5;
-}
-
-.links-widget .links-list li{
-  @apply relative block mb-3;
-}
-.links-widget .links-list li a {
-  @apply relative inline-block text-base leading-6 text-[#545151] pr-5
-          hover:text-red-500;
-}
-//fotter-bottom
-.bottom-top{
-  @apply relative block w-full bg-[#eaeaea] px-20 py-5 -mt-9 z-10;
-}
-.bottom-top .list-item{
-  @apply relative flex items-center justify-between;
-}
-.bottom-top .list-item li{
-  @apply relative inline-block py-2 pl-14;
-}
-.bottom-top .list-item li .icon-box {
-  @apply absolute left-0 top-0 inline-block w-11 h-11 leading-10 border border-[#d5d5d5] rounded-full text-center;
-}
-.bottom-top .list-item li .icon-box img {
-  @apply inline-block max-w-full h-auto transition-all duration-700 ease-in-out delay-100;
-}
-.footer-bottom .bottom-inner {
-  @apply relative pt-12 pb-11 flex items-center justify-between;
-}
-.social-box span {
-  @apply relative block mb-3;
-}
-.social-box .social-links {
-  @apply relative flex items-center;
-}
-.social-box .social-links li {
-  @apply relative inline-block mr-1;
-}
-.social-box .social-links li a {
-  @apply relative inline-block w-11 h-11 leading-10 bg-[#eaeaea] text-center text-xl text-[#1e242a];
-  position: relative;
-  display: inline-block;
-  width: 45px;
-  height: 45px;
-  line-height: 51px;
-  background: #eaeaea;
-  text-align: center;
-  font-size: 20px;
-  color: var(--title-color);
-}
-.footer-logo {
-  @apply relative block items-center;
-}
-.footer-logo .logo {
-  @apply relative block mb-4;
-}
-.footer-nav li{
-  @apply relative inline-block ml-6 first:ml-0;
-}
-.footer-nav li a {
-  @apply inline-block text-[#545151];
-}
-
-
-.main-footer .footer-bottom .copyright p a {
-  @apply text-red-600;
-}
-//////main-footer 

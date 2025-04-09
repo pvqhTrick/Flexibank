@@ -1,177 +1,166 @@
 <!doctype html>
 <html lang="en" data-theme="light">
-  <head>
-    <meta charset="utf-8" />
-    <title>React System Admin</title>
-    <meta name="description" content="Uberental System Admin" />
-    <meta name="robots" content="noarchive,index,follow" />
-    <link id="canonical" rel="canonical" href="https://geneat.vn" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
-      rel="stylesheet"
-    /> 
-    <!--  swiper 10  -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<head>
+  <meta charset="utf-8" />
+  <title>React System Admin</title>
+  <meta name="description" content="Uberental System Admin" />
+  <meta name="robots" content="noarchive,index,follow" />
+  <link id="canonical" rel="canonical" href="https://geneat.vn" />
 
-    <!--  gsap 3  -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <!--  swiper 10  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <meta
-      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5, user-scalable=1"
-      name="viewport"
-    />
-    <meta http-equiv="X-UA-Compatible" content="IE=100" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
+  <!--  gsap 3  -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
 
-    <!-- META FOR FACEBOOK -->
-    <meta property="fb:app_id" content="110837687935741" />
-    <meta property="og:locale" content="vi_VN" />
-    <meta property="og:site_name" content="geneat.vn" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://inmergers.com/assets/images/inmerger_default.jpg" />
-    <meta property="og:image:width" content="596" />
-    <meta property="og:image:height" content="596" />
-    <meta property="og:url" itemprop="url" content="https://geneat.vn" />
-    <meta property="og:title" itemprop="headline" content="Angular" />
-    <meta
-      property="og:description"
-      content="Angular is a platform for building mobile and desktop web applications. Join the community of millions of developers who build compelling user interfaces with Angular."
-    />
-    <!-- END META FOR FACEBOOK -->
+  <meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5, user-scalable=1"
+    name="viewport" />
+  <meta http-equiv="X-UA-Compatible" content="IE=100" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@aAngular" />
-    <meta name="twitter:creator" content="@aAngular" />
-    <meta name="twitter:url" content="https://geneat.vn" />
-    <meta name="twitter:image" content="https://geneat.vn/assets/images/banner-img-1.jpg" />
-    <meta name="twitter:title" content="Angular" />
-    <meta
-      name="twitter:description"
-      content="Angular is a platform for building mobile and desktop web applications. Join the community of millions of developers who build compelling user interfaces with Angular."
-    />
-    <!-- End Twitter Card -->
-    <base href="/" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <meta
-      name="google-signin-client_id"
-      content="458714151950-fv7bp4u656lk3bel41agq6jh2j4b27pb.apps.googleusercontent.com"
-    />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L3TLVBTM19"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
+  <!-- META FOR FACEBOOK -->
+  <meta property="fb:app_id" content="110837687935741" />
+  <meta property="og:locale" content="vi_VN" />
+  <meta property="og:site_name" content="geneat.vn" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://inmergers.com/assets/images/inmerger_default.jpg" />
+  <meta property="og:image:width" content="596" />
+  <meta property="og:image:height" content="596" />
+  <meta property="og:url" itemprop="url" content="https://geneat.vn" />
+  <meta property="og:title" itemprop="headline" content="Angular" />
+  <meta property="og:description"
+    content="Angular is a platform for building mobile and desktop web applications. Join the community of millions of developers who build compelling user interfaces with Angular." />
+  <!-- END META FOR FACEBOOK -->
 
-      function gtag() {
-        dataLayer.push(argumentxs);
-      }
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@aAngular" />
+  <meta name="twitter:creator" content="@aAngular" />
+  <meta name="twitter:url" content="https://geneat.vn" />
+  <meta name="twitter:image" content="https://geneat.vn/assets/images/banner-img-1.jpg" />
+  <meta name="twitter:title" content="Angular" />
+  <meta name="twitter:description"
+    content="Angular is a platform for building mobile and desktop web applications. Join the community of millions of developers who build compelling user interfaces with Angular." />
+  <!-- End Twitter Card -->
+  <base href="/" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <meta name="google-signin-client_id"
+    content="458714151950-fv7bp4u656lk3bel41agq6jh2j4b27pb.apps.googleusercontent.com" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L3TLVBTM19"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-      gtag('js', new Date());
+    function gtag() {
+      dataLayer.push(argumentxs);
+    }
 
-      gtag('config', 'G-L3TLVBTM19');
-    </script>
-    <link href="/assets/styles/theme.css" rel="stylesheet" />
+    gtag('js', new Date());
 
-    <!--  vanilla-lazyload 17 -->
-    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17/dist/lazyload.min.js"></script>
-    <script>
-      setTimeout(() => {
-        new LazyLoad({
-          callback_error: el => (el.src = 'https://via.placeholder.com/1x1/?text='),
-        });
-      }, 1000);
-    </script>
+    gtag('config', 'G-L3TLVBTM19');
+  </script>
+  <link href="/assets/styles/theme.css" rel="stylesheet" />
 
-    <!--  line-awesome 1  -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/line-awesome@1/dist/line-awesome/css/line-awesome.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  
-  <body>
-    <div class="boxed_wrapper">
-        <!-- main header -->
-        <header class="main-header">
-            <!-- header-top -->
-            <div class="header-top outer-container top-inner">
-                <div class="left-column">
-                    <ul class="info-list">
-                        <li class="looking-box">
-                            <div class="icon-box"><img src="assets/images/icons/icon-1.png" alt=""></div>
-                            <h5>Looking:</h5>
-                            <div class="select-box">
-                                <select class="wide text-red-100" style="display: none;">
-                                <option data-display="Personal" class="text-amber-500 px-4 py-2 m-6 rounded-2xl">Personal</option>
-                                <option value="1">Personal 2</option>
-                                <option value="2">Personal 3</option>
-                                <option value="3">Personal 4</option>
-                                </select>
-                                <div class="nice-select wide" tabindex="0">
-                                    <span class="current">Personal</span>
-                                    <!-- <ul class="list">
+  <!--  vanilla-lazyload 17 -->
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17/dist/lazyload.min.js"></script>
+  <script>
+    setTimeout(() => {
+      new LazyLoad({
+        callback_error: el => (el.src = 'https://via.placeholder.com/1x1/?text='),
+      });
+    }, 1000);
+  </script>
+
+  <!--  line-awesome 1  -->
+  <link href="https://cdn.jsdelivr.net/npm/line-awesome@1/dist/line-awesome/css/line-awesome.min.css"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div class="boxed_wrapper">
+
+    <header class="main-header">
+      <!-- header-top -->
+      <div class="header-top outer-container top-inner">
+        <div class="left-column">
+          <ul class="info-list">
+            <li class="looking-box">
+              <div class="icon-box"><img src="assets/images/icons/icon-1.png" alt=""></div>
+              <h5>Looking:</h5>
+              <div class="select-box">
+                <select class="wide text-red-100" style="display: none;">
+                  <option data-display="Personal" class="text-amber-500 px-4 py-2 m-6 rounded-2xl">Personal</option>
+                  <option value="1">Personal 2</option>
+                  <option value="2">Personal 3</option>
+                  <option value="3">Personal 4</option>
+                </select>
+                <div class="nice-select wide" tabindex="0">
+                  <span class="current">Personal</span>
+                  <!-- <ul class="list">
                                         <li data-value="Personal" data-display="Personal" class="option selected">Personal</li>
                                         <li data-value="1" class="option">Personal 2</li><li data-value="2" class="option">Personal 3</li>
                                         <li data-value="3" class="option">Personal 4</li>
                                     </ul> -->
-                                </div>
-                            </div>
-                        </li>
-                        <li class="login-box pr_30">
-                            <div class="icon-box"><img src="assets/images/icons/icon-2.png" alt=""></div>
-                            <div class="select-box">
-                                <select class="wide" style="display: none;">
-                                <option data-display="Login">Login</option>
-                                <option value="1">Logout</option>
-                                <option value="2">Signup</option>
-                                </select>
-                                <div class="nice-select wide" tabindex="0">
-                                    <span class="current">Login</span>
-                                    <!-- <ul class="list">
+                </div>
+              </div>
+            </li>
+            <li class="login-box pr_30">
+              <div class="icon-box"><img src="assets/images/icons/icon-2.png" alt=""></div>
+              <div class="select-box">
+                <select class="wide" style="display: none;">
+                  <option data-display="Login">Login</option>
+                  <option value="1">Logout</option>
+                  <option value="2">Signup</option>
+                </select>
+                <div class="nice-select wide" tabindex="0">
+                  <span class="current">Login</span>
+                  <!-- <ul class="list">
                                         <li data-value="Login" data-display="Login" class="option selected">Login</li>
                                         <li data-value="1" class="option">Logout</li><li data-value="2" class="option">Signup</li>
                                     </ul> -->
-                                </div>
-                            </div>
-                        </li>
-                        <li class="mail-box">
-                            <div class="icon-box"><img src="assets/images/icons/icon-3.png" alt=""></div>
-                            <a href="mailto:getsupport@example.com">getsupport@example.com</a>
-                        </li>
-                    </ul>
                 </div>
-                <div class="right-column">
-                    <ul class="option-list p_relative pr_30 mr_30">
-                        <li>
-                            <img src="assets/images/icons/icon-4.png" alt="">
-                            <a href="careers.html">Careers</a>
-                        </li>
-                        <li><a href="faq.html">Faq’s</a></li>
-                        <li><a href="index.html">Business</a></li>
-                        <li><a href="index.html">Rewards</a></li>
-                    </ul>
-                    <div class="language-box">
-                        <div class="icon-box"><img src="assets/images/icons/icon-5.png" alt=""></div>
-                        <div class="select-box">
-                            <select class="wide" style="display: none;">
-                            <option data-display="Us - En">Us - En</option>
-                            <!-- <option value="1">Uk - En</option>
+              </div>
+            </li>
+            <li class="mail-box">
+              <div class="icon-box"><img src="assets/images/icons/icon-3.png" alt=""></div>
+              <a href="mailto:getsupport@example.com">getsupport@example.com</a>
+            </li>
+          </ul>
+        </div>
+        <div class="right-column">
+          <ul class="option-list p_relative pr_30 mr_30">
+            <li>
+              <img src="assets/images/icons/icon-4.png" alt="">
+              <a href="careers.html">Careers</a>
+            </li>
+            <li><a href="faq.html">Faq’s</a></li>
+            <li><a href="index.html">Business</a></li>
+            <li><a href="index.html">Rewards</a></li>
+          </ul>
+          <div class="language-box">
+            <div class="icon-box"><img src="assets/images/icons/icon-5.png" alt=""></div>
+            <div class="select-box">
+              <select class="wide" style="display: none;">
+                <option data-display="Us - En">Us - En</option>
+                <!-- <option value="1">Uk - En</option>
                             <option value="2">Canada - En</option>
                             <option value="3">France - Fr</option>
                             <option value="4">Italy - It</option>
                             <option value="5">Turky - Tu</option> -->
-                            </select>
-                            <div class="nice-select wide" tabindex="0">
-                                <span class="current">Us - En</span>
-                                <!-- <ul class="list">
+              </select>
+              <div class="nice-select wide" tabindex="0">
+                <span class="current">Us - En</span>
+                <!-- <ul class="list">
                                     <li data-value="Us - En" data-display="Us - En" class="option selected">Us - En</li>
                                     <li data-value="1" class="option">Uk - En</li>
                                     <li data-value="2" class="option">Canada - En</li>
@@ -179,947 +168,1113 @@
                                     <li data-value="4" class="option">Italy - It</li>
                                     <li data-value="5" class="option">Turky - Tu</li>
                                 </ul> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-            <!--   header-lower -->
-            <div class="header-lower outer-container outer-box">
-                <div class="menu-area">
-                    <div class="logo-box mr-[110px]">
-                        <figure class="logo">
-                            <a href="index.html">
-                                <img src="assets/images/logo.png" alt="">
-                            </a>
-                        </figure>
-                    </div>
-                    <!--Mobile Navigation Toggler-->
-                    <div class="mobile-nav-toggler">
-                        <i class="icon-bar"></i>
-                        <i class="icon-bar"></i>
-                        <i class="icon-bar"></i>
-                    </div>
-                    <nav class="main-menu navbar-expand-md navbar-light clearfix">
-                        <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
-                            <ul class="navigation clearfix">
-                                <li class="current dropdown"><a href="#">Home</a>
-                                    <ul>
-                                        <li><a href="index.html">Home Page 01</a></li>
-                                        <li><a href="index-2.html">Home Page 02</a></li>
-                                        <li><a href="index-3.html">Home Page 03</a></li>
-                                        <li><a href="index-4.html">Home Page 04</a></li>
-                                    </ul>
-                                <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div></li> 
-                                <li class="dropdown"><a href="#">Services</a>
-                                    <ul>
-                                        <li class="dropdown"><a href="#">Accounts</a>
-                                            <ul>
-                                                <li><a href="account.html">All Accounts</a></li>
-                                                <li><a href="account-details.html">Savings Account</a></li>
-                                                <li><a href="account-details-2.html">Current Account</a></li>
-                                                <li><a href="account-details-3.html">Family 360º</a></li>
-                                                <li><a href="account-details-4.html">Senior Citizen</a></li>
-                                                <li><a href="account-details-5.html">Demat Account</a></li>
-                                                <li><a href="account-details-6.html">Business Account</a></li>
-                                            </ul>
-                                        <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div></li>
-                                        <li class="dropdown"><a href="#">Investments</a>
-                                            <ul>
-                                                <li><a href="investments-details.html">Trade FX</a></li>
-                                                <li><a href="investments-details-2.html">Multi Currency a/c</a></li>
-                                                <li><a href="investments-details-3.html">Mutual Funds</a></li>
-                                                <li><a href="investments-details-4.html">Insurance</a></li>
-                                                <li><a href="investments-details-5.html">Tax-Deferred Investment</a></li>
-                                                <li><a href="investments-details-6.html">Investment Advisory</a></li>
-                                            </ul>
-                                        <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div></li>
-                                        <li class="dropdown"><a href="#">Cards</a>
-                                            <ul>
-                                                <li><a href="cards.html">All Cards</a></li>
-                                                <li><a href="card-details.html">Platinum Card</a></li>
-                                                <li><a href="card-details-2.html">Millinnia Card</a></li>
-                                                <li><a href="card-details-3.html">Money Back Card</a></li>
-                                                <li><a href="card-details-4.html">Easy EMI Card</a></li>
-                                                <li><a href="card-details-5.html">Dinners Club Privilege</a></li>
-                                                <li><a href="card-details-6.html">Titanium Times</a></li>
-                                            </ul>
-                                        <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div></li>
-                                    </ul>
-                                <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div></li> 
-                                <li class="dropdown"><a href="#">About</a>
-                                    <ul>
-                                        <li><a href="about.html">About Us</a></li>
-                                        <li class="dropdown"><a href="#">Leadership</a>
-                                            <ul>
-                                                <li><a href="team.html">Leadership</a></li>
-                                                <li><a href="team-details.html">Leadership Details</a></li>
-                                            </ul>
-                                        <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div></li>
-                                        <li class="dropdown"><a href="#">Careers</a>
-                                            <ul>
-                                                <li><a href="careers.html">Careers</a></li>
-                                                <li><a href="career-details.html">Career Details</a></li>
-                                            </ul>
-                                        <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div></li>
-                                        <li><a href="faq.html">Faq’s</a></li>
-                                        <li><a href="testimonial.html">Testimonials</a></li>
-                                        <li><a href="error.html">404</a></li>
-                                    </ul>
-                                <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div></li> 
-                                <li class="dropdown"><a href="#">News</a>
-                                    <ul>
-                                        <li><a href="blog.html">Grid View 01</a></li>
-                                        <li><a href="blog-2.html">Grid View 02</a></li>
-                                        <li><a href="blog-3.html">List View 01</a></li>
-                                        <li><a href="blog-4.html">List View 02</a></li>
-                                        <li><a href="blog-details.html">Single Post</a></li>
-                                    </ul>
-                                <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div></li> 
-                                <li class="dropdown"><a href="#">Apply Now</a>
-                                    <ul>
-                                        <li class="dropdown"><a href="#">Loans</a>
-                                            <ul>
-                                                <li><a href="loans-1.html">Home Loan</a></li>
-                                                <li><a href="loans-2.html">Personal Loan</a></li>
-                                                <li><a href="loans-3.html">Vehicle Loan</a></li>
-                                                <li><a href="loans-4.html">Education Loan</a></li>
-                                                <li><a href="loans-5.html">Gold Loan</a></li>
-                                            </ul>
-                                        <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div></li>
-                                        <li><a href="cards-2.html">Credit Card</a></li>
-                                        <li><a href="cards-3.html">Debit Card</a></li>
-                                    </ul>
-                                <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div></li>  
-                                <li><a href="contact.html">Get In Touch</a></li> 
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-                <div class="menu-right-content">
-                    <div class="search-box search-toggler"><span>Search</span><img src="assets/images/icons/icon-7.png" alt=""></div>
-                    <div class="support-box"><img src="assets/images/icons/icon-8.png" alt=""><a href="index.html">Support</a></div>
-                    <div class="btn-box mr-[10px]"><a href="index.html" class="theme-btn"><span>New Account</span></a></div>
-                    <div class="nav-toggler">
-                        <button type="button" class="side-panel-btn nav-btn"><img src="assets/images/icons/icon-10.png" alt=""></button>
-                        <div class="side-panel nav-content">
-                            <div class="close-icon"><i class="fas fa-times"></i></div>
-                            <div class="tabs-box">
-                                <div class="tab-btns tab-buttons mb_25">
-                                    <div class="tab-btn active-btn" data-tab="#branches-btn"><h5>Branches</h5></div>
-                                    <div class="tab-btn" data-tab="#atm-btn"><h5>ATM’s</h5></div>
-                                </div>
-                                <div class="tabs-content">
-                                    <div class="tab active-tab" id="branches-btn">
-                                        <div class="inner-box">
-                                            <div class="form-group">
-                                                <div class="icon-box"><img src="assets/images/icons/icon-86.png" alt=""></div>
-                                                <input type="text" name="location" placeholder="Current Location">
-                                            </div>
-                                            <div class="text">[or]</div>
-                                            <div class="form-group">
-                                                <input type="text" name="city" placeholder="City name: Hamburg">
-                                            </div>
-                                            <div class="link-box"><a href="https://www.google.com/maps" target="_blank"><i class="flaticon-right-arrow"></i>Find On Map</a></div>
-                                        </div>
-                                    </div>
-                                    <div class="tab" id="atm-btn">
-                                        <div class="inner-box">
-                                            <div class="form-group">
-                                                <div class="icon-box"><img src="/images/image/icons/icon-86.png" alt=""></div>
-                                                <input type="text" name="location" placeholder="Current Location">
-                                            </div>
-                                            <div class="text">[or]</div>
-                                            <div class="form-group">
-                                                <input type="text" name="city" placeholder="City name: Hamburg">
-                                            </div>
-                                            <div class="link-box"><a href="https://www.google.com/maps" target="_blank"><i class="flaticon-right-arrow"></i>Find On Map</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          </div>
+        </div>
+      </div>
+      <!--   header-lower -->
+      <div class="header-lower outer-container outer-box">
+        <div class="menu-area">
+          <div class="logo-box mr-[110px]">
+            <figure class="logo">
+              <a href="index.html">
+                <img src="assets/images/logo.png" alt="">
+              </a>
+            </figure>
+          </div>
+          <!--Mobile Navigation Toggler-->
+          <div class="mobile-nav-toggler">
+            <i class="icon-bar"></i>
+            <i class="icon-bar"></i>
+            <i class="icon-bar"></i>
+          </div>
+          <nav class="main-menu navbar-expand-md navbar-light clearfix">
+            <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+              <ul class="navigation clearfix">
+                <li class="current dropdown"><a href="#">Home</a>
+                  <ul>
+                    <li><a href="index.html">Home Page 01</a></li>
+                    <li><a href="index-2.html">Home Page 02</a></li>
+                    <li><a href="index-3.html">Home Page 03</a></li>
+                    <li><a href="index-4.html">Home Page 04</a></li>
+                  </ul>
+                  <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div>
+                </li>
+                <li class="dropdown"><a href="#">Services</a>
+                  <ul>
+                    <li class="dropdown"><a href="#">Accounts</a>
+                      <ul>
+                        <li><a href="account.html">All Accounts</a></li>
+                        <li><a href="account-details.html">Savings Account</a></li>
+                        <li><a href="account-details-2.html">Current Account</a></li>
+                        <li><a href="account-details-3.html">Family 360º</a></li>
+                        <li><a href="account-details-4.html">Senior Citizen</a></li>
+                        <li><a href="account-details-5.html">Demat Account</a></li>
+                        <li><a href="account-details-6.html">Business Account</a></li>
+                      </ul>
+                      <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div>
+                    </li>
+                    <li class="dropdown"><a href="#">Investments</a>
+                      <ul>
+                        <li><a href="investments-details.html">Trade FX</a></li>
+                        <li><a href="investments-details-2.html">Multi Currency a/c</a></li>
+                        <li><a href="investments-details-3.html">Mutual Funds</a></li>
+                        <li><a href="investments-details-4.html">Insurance</a></li>
+                        <li><a href="investments-details-5.html">Tax-Deferred Investment</a></li>
+                        <li><a href="investments-details-6.html">Investment Advisory</a></li>
+                      </ul>
+                      <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div>
+                    </li>
+                    <li class="dropdown"><a href="#">Cards</a>
+                      <ul>
+                        <li><a href="cards.html">All Cards</a></li>
+                        <li><a href="card-details.html">Platinum Card</a></li>
+                        <li><a href="card-details-2.html">Millinnia Card</a></li>
+                        <li><a href="card-details-3.html">Money Back Card</a></li>
+                        <li><a href="card-details-4.html">Easy EMI Card</a></li>
+                        <li><a href="card-details-5.html">Dinners Club Privilege</a></li>
+                        <li><a href="card-details-6.html">Titanium Times</a></li>
+                      </ul>
+                      <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div>
+                    </li>
+                  </ul>
+                  <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div>
+                </li>
+                <li class="dropdown"><a href="#">About</a>
+                  <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li class="dropdown"><a href="#">Leadership</a>
+                      <ul>
+                        <li><a href="team.html">Leadership</a></li>
+                        <li><a href="team-details.html">Leadership Details</a></li>
+                      </ul>
+                      <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div>
+                    </li>
+                    <li class="dropdown"><a href="#">Careers</a>
+                      <ul>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="career-details.html">Career Details</a></li>
+                      </ul>
+                      <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div>
+                    </li>
+                    <li><a href="faq.html">Faq’s</a></li>
+                    <li><a href="testimonial.html">Testimonials</a></li>
+                    <li><a href="error.html">404</a></li>
+                  </ul>
+                  <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div>
+                </li>
+                <li class="dropdown"><a href="#">News</a>
+                  <ul>
+                    <li><a href="blog.html">Grid View 01</a></li>
+                    <li><a href="blog-2.html">Grid View 02</a></li>
+                    <li><a href="blog-3.html">List View 01</a></li>
+                    <li><a href="blog-4.html">List View 02</a></li>
+                    <li><a href="blog-details.html">Single Post</a></li>
+                  </ul>
+                  <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div>
+                </li>
+                <li class="dropdown"><a href="#">Apply Now</a>
+                  <ul>
+                    <li class="dropdown"><a href="#">Loans</a>
+                      <ul>
+                        <li><a href="loans-1.html">Home Loan</a></li>
+                        <li><a href="loans-2.html">Personal Loan</a></li>
+                        <li><a href="loans-3.html">Vehicle Loan</a></li>
+                        <li><a href="loans-4.html">Education Loan</a></li>
+                        <li><a href="loans-5.html">Gold Loan</a></li>
+                      </ul>
+                      <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div>
+                    </li>
+                    <li><a href="cards-2.html">Credit Card</a></li>
+                    <li><a href="cards-3.html">Debit Card</a></li>
+                  </ul>
+                  <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div>
+                </li>
+                <li><a href="contact.html">Get In Touch</a></li>
+              </ul>
             </div>
-            <!--sticky Header-->
-            <div class="sticky-header hidden">
-                <div class="outer-container">
-                    <div class="outer-box">
-                        <div class="menu-area">
-                            <div class="logo-box mr_110">
-                                <figure class="logo">
-                                    <a href="index.html"><img src="assets/images/logo.png" alt=""></a>
-                                </figure>
-                            </div>
-                            <nav class="main-menu clearfix">
-                                <!--Keep This Empty / Menu will come through Javascript-->   
-                                <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
-                                    <ul class="navigation clearfix">
-                                        <li class="current dropdown"><a href="#">Home</a>
-                                            <ul>
-                                                <li><a href="index.html">Home Page 01</a></li>
-                                                <li><a href="index-2.html">Home Page 02</a></li>
-                                                <li><a href="index-3.html">Home Page 03</a></li>
-                                                <li><a href="index-4.html">Home Page 04</a></li>
-                                            </ul>
-                                        <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div></li> 
-                                        <li class="dropdown"><a href="#">Services</a>
-                                            <ul>
-                                                <li class="dropdown"><a href="#">Accounts</a>
-                                                    <ul>
-                                                        <li><a href="account.html">All Accounts</a></li>
-                                                        <li><a href="account-details.html">Savings Account</a></li>
-                                                        <li><a href="account-details-2.html">Current Account</a></li>
-                                                        <li><a href="account-details-3.html">Family 360º</a></li>
-                                                        <li><a href="account-details-4.html">Senior Citizen</a></li>
-                                                        <li><a href="account-details-5.html">Demat Account</a></li>
-                                                        <li><a href="account-details-6.html">Business Account</a></li>
-                                                    </ul>
-                                                <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div></li>
-                                                <li class="dropdown"><a href="#">Investments</a>
-                                                    <ul>
-                                                        <li><a href="investments-details.html">Trade FX</a></li>
-                                                        <li><a href="investments-details-2.html">Multi Currency a/c</a></li>
-                                                        <li><a href="investments-details-3.html">Mutual Funds</a></li>
-                                                        <li><a href="investments-details-4.html">Insurance</a></li>
-                                                        <li><a href="investments-details-5.html">Tax-Deferred Investment</a></li>
-                                                        <li><a href="investments-details-6.html">Investment Advisory</a></li>
-                                                    </ul>
-                                                <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div></li>
-                                                <li class="dropdown"><a href="#">Cards</a>
-                                                    <ul>
-                                                        <li><a href="cards.html">All Cards</a></li>
-                                                        <li><a href="card-details.html">Platinum Card</a></li>
-                                                        <li><a href="card-details-2.html">Millinnia Card</a></li>
-                                                        <li><a href="card-details-3.html">Money Back Card</a></li>
-                                                        <li><a href="card-details-4.html">Easy EMI Card</a></li>
-                                                        <li><a href="card-details-5.html">Dinners Club Privilege</a></li>
-                                                        <li><a href="card-details-6.html">Titanium Times</a></li>
-                                                    </ul>
-                                                <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div></li>
-                                            </ul>
-                                        <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div></li> 
-                                        <li class="dropdown"><a href="#">About</a>
-                                            <ul>
-                                                <li><a href="about.html">About Us</a></li>
-                                                <li class="dropdown"><a href="#">Leadership</a>
-                                                    <ul>
-                                                        <li><a href="team.html">Leadership</a></li>
-                                                        <li><a href="team-details.html">Leadership Details</a></li>
-                                                    </ul>
-                                                <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div></li>
-                                                <li class="dropdown"><a href="#">Careers</a>
-                                                    <ul>
-                                                        <li><a href="careers.html">Careers</a></li>
-                                                        <li><a href="career-details.html">Career Details</a></li>
-                                                    </ul>
-                                                <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div></li>
-                                                <li><a href="faq.html">Faq’s</a></li>
-                                                <li><a href="testimonial.html">Testimonials</a></li>
-                                                <li><a href="error.html">404</a></li>
-                                            </ul>
-                                        <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div></li> 
-                                        <li class="dropdown"><a href="#">News</a>
-                                            <ul>
-                                                <li><a href="blog.html">Grid View 01</a></li>
-                                                <li><a href="blog-2.html">Grid View 02</a></li>
-                                                <li><a href="blog-3.html">List View 01</a></li>
-                                                <li><a href="blog-4.html">List View 02</a></li>
-                                                <li><a href="blog-details.html">Single Post</a></li>
-                                            </ul>
-                                        <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div></li> 
-                                        <li class="dropdown"><a href="#">Apply Now</a>
-                                            <ul>
-                                                <li class="dropdown"><a href="#">Loans</a>
-                                                    <ul>
-                                                        <li><a href="loans-1.html">Home Loan</a></li>
-                                                        <li><a href="loans-2.html">Personal Loan</a></li>
-                                                        <li><a href="loans-3.html">Vehicle Loan</a></li>
-                                                        <li><a href="loans-4.html">Education Loan</a></li>
-                                                        <li><a href="loans-5.html">Gold Loan</a></li>
-                                                    </ul>
-                                                <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div></li>
-                                                <li><a href="cards-2.html">Credit Card</a></li>
-                                                <li><a href="cards-3.html">Debit Card</a></li>
-                                            </ul>
-                                        <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div></li>  
-                                        <li><a href="contact.html">Get In Touch</a></li> 
-                                    </ul>
-                                </div>
-                            </nav>
-                        </div>
-                        <div class="menu-right-content">
-                            <div class="search-box search-toggler pr_30 mr_30"><span>Search</span> <img src="assets/images/icons/icon-7.png" alt=""></div>
-                            <div class="support-box mr_50"><img src="assets/images/icons/icon-8.png" alt=""><a href="index.html">Support</a></div>
-                            <div class="btn-box mr_10"><a href="index.html" class="theme-btn"><span>New Account</span></a></div>
-                            <div class="nav-toggler">
-                                <button type="button" class="side-panel-btn nav-btn-2"><img src="assets/images/icons/icon-10.png" alt=""></button>
-                                <div class="side-panel nav-content-2">
-                                    <div class="close-icon"><i class="fas fa-times"></i></div>
-                                    <div class="tabs-box">
-                                        <div class="tab-btns tab-buttons mb_25">
-                                            <div class="tab-btn active-btn" data-tab="#branches-btn2"><h5>Branches</h5></div>
-                                            <div class="tab-btn" data-tab="#atm-btn2"><h5>ATM’s</h5></div>
-                                        </div>
-                                        <div class="tabs-content">
-                                            <div class="tab active-tab" id="branches-btn2">
-                                                <div class="inner-box">
-                                                    <div class="form-group">
-                                                        <div class="icon-box"><img src="assets/images/icons/icon-86.png" alt=""></div>
-                                                        <input type="text" name="location" placeholder="Current Location">
-                                                    </div>
-                                                    <div class="text">[or]</div>
-                                                    <div class="form-group">
-                                                        <input type="text" name="city" placeholder="City name: Hamburg">
-                                                    </div>
-                                                    <div class="link-box"><a href="https://www.google.com/maps" target="_blank"><i class="flaticon-right-arrow"></i>Find On Map</a></div>
-                                                </div>
-                                            </div>
-                                            <div class="tab" id="atm-btn2">
-                                                <div class="inner-box">
-                                                    <div class="form-group">
-                                                        <div class="icon-box"><img src="assets/images/icons/icon-86.png" alt=""></div>
-                                                        <input type="text" name="location" placeholder="Current Location">
-                                                    </div>
-                                                    <div class="text">[or]</div>
-                                                    <div class="form-group">
-                                                        <input type="text" name="city" placeholder="City name: Hamburg">
-                                                    </div>
-                                                    <div class="link-box"><a href="https://www.google.com/maps" target="_blank"><i class="flaticon-right-arrow"></i>Find On Map</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+          </nav>
+        </div>
+        <div class="menu-right-content">
+          <div class="search-box search-toggler"><span>Search</span><img src="assets/images/icons/icon-7.png" alt="">
+          </div>
+          <div class="support-box"><img src="assets/images/icons/icon-8.png" alt=""><a href="index.html">Support</a>
+          </div>
+          <div class="btn-box mr-[10px]"><a href="index.html" class="theme-btn"><span>New Account</span></a></div>
+          <div class="nav-toggler">
+            <button type="button" class="side-panel-btn nav-btn"><img src="assets/images/icons/icon-10.png"
+                alt=""></button>
+            <div class="side-panel nav-content">
+              <div class="close-icon"><i class="fas fa-times"></i></div>
+              <div class="tabs-box">
+                <div class="tab-btns tab-buttons mb_25">
+                  <div class="tab-btn active-btn" data-tab="#branches-btn">
+                    <h5>Branches</h5>
+                  </div>
+                  <div class="tab-btn" data-tab="#atm-btn">
+                    <h5>ATM’s</h5>
+                  </div>
+                </div>
+                <div class="tabs-content">
+                  <div class="tab active-tab" id="branches-btn">
+                    <div class="inner-box">
+                      <div class="form-group">
+                        <div class="icon-box"><img src="assets/images/icons/icon-86.png" alt=""></div>
+                        <input type="text" name="location" placeholder="Current Location">
+                      </div>
+                      <div class="text">[or]</div>
+                      <div class="form-group">
+                        <input type="text" name="city" placeholder="City name: Hamburg">
+                      </div>
+                      <div class="link-box"><a href="https://www.google.com/maps" target="_blank"><i
+                            class="flaticon-right-arrow"></i>Find On Map</a></div>
                     </div>
-                </div>
-            </div>
-        </header>
-        <!-- main-header end -->       
-        <!-- banner-section -->
-        <section class="banner-section">
-            <div class="banner-carousel owl-theme owl-carousel owl-loaded owl-drag">
-                <div class="owl-stage-outer">
-                    <div class="owl-stage" style="transform: translate3d(-5368px, 0px, 0px); transition: all; width: 2000px;">
-                        <div class="owl-item cloned" style="width: 1342px;">
-                            <div class="slide-item p_relative">
-                                <div class="bg-layer" style="background-image: url(assets/images/banner/banner-2.jpg);"></div>
-                                <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-1.png);"></div>
-                                <div class="outer-container">
-                                    <div class="content-box">
-                                        <h5><span>Business Loan</span> From 8.5% APR</h5>
-                                        <h2>Fuel your business growth with our easy loan</h2>
-                                        <div class="btn-box"><a href="loans-1.html" class="theme-btn"><span>Apply Your Loan</span></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="owl-item cloned" style="width: 1342px;">
-                            <div class="slide-item p_relative">
-                            <div class="bg-layer" style="background-image: url(assets/images/banner/banner-3.jpg);"></div>
-                            <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-1.png);"></div>
-                            <div class="outer-container">
-                                <div class="content-box">
-                                    <h5><span>Credit Card</span> Enjoy 0% Annual Fee</h5>
-                                    <h2>Maximize benefits with your every transaction</h2>
-                                    <div class="btn-box"><a href="cards.html" class="theme-btn"><span>Apply Your Card</span></a></div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="owl-item" style="width: 1342px;">
-                            <div class="slide-item p_relative">
-                            <div class="bg-layer" style="background-image: url(assets/images/banner/banner-1.jpg);"></div>
-                            <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-1.png);"></div>
-                            <div class="outer-container">
-                                <div class="content-box">
-                                    <h5><span>Flexi Savings</span> Earn up to 2.5% APY</h5>
-                                    <h2>Enjoy zero free banking on your sb account.</h2>
-                                    <div class="btn-box"><a href="service-details.html" class="theme-btn"><span>Book a Consultation</span></a></div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="owl-item animated owl-animated-out fadeOut" style="width: 1342px; left: 1342px;">
-                            <div class="slide-item p_relative">
-                                <div class="bg-layer" style="background-image: url(assets/images/banner/banner-2.jpg);"></div>
-                                <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-1.png);"></div>
-                                <div class="outer-container">
-                                    <div class="content-box">
-                                        <h5><span>Business Loan</span> From 8.5% APR</h5>
-                                        <h2>Fuel your business growth with our easy loan</h2>
-                                        <div class="btn-box"><a href="loans-1.html" class="theme-btn"><span>Apply Your Loan</span></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="owl-item animated owl-animated-in fadeIn active" style="width: 1342px;">
-                            <div class="slide-item p_relative">
-                                <div class="bg-layer" style="background-image: url(assets/images/banner/banner-3.jpg);"></div>
-                                <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-1.png);"></div>
-                                <div class="outer-container">
-                                    <div class="content-box">
-                                        <h5><span>Credit Card</span> Enjoy 0% Annual Fee</h5>
-                                        <h2>Maximize benefits with your every transaction</h2>
-                                        <div class="btn-box"><a href="cards.html" class="theme-btn"><span>Apply Your Card</span></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="owl-item cloned" style="width: 1342px;">
-                            <div class="slide-item p_relative">
-                            <div class="bg-layer" style="background-image: url(assets/images/banner/banner-1.jpg);"></div>
-                            <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-1.png);"></div>
-                            <div class="outer-container">
-                                <div class="content-box">
-                                    <h5><span>Flexi Savings</span> Earn up to 2.5% APY</h5>
-                                    <h2>Enjoy zero free banking on your sb account.</h2>
-                                    <div class="btn-box"><a href="service-details.html" class="theme-btn"><span>Book a Consultation</span></a></div>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="owl-item cloned" style="width: 1342px;">
-                            <div class="slide-item p_relative">
-                            <div class="bg-layer" style="background-image: url(assets/images/banner/banner-2.jpg);"></div>
-                            <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-1.png);"></div>
-                            <div class="outer-container">
-                                <div class="content-box">
-                                    <h5><span>Business Loan</span> From 8.5% APR</h5>
-                                    <h2>Fuel your business growth with our easy loan</h2>
-                                    <div class="btn-box"><a href="loans-1.html" class="theme-btn"><span>Apply Your Loan</span></a></div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
+                  </div>
+                  <div class="tab" id="atm-btn">
+                    <div class="inner-box">
+                      <div class="form-group">
+                        <div class="icon-box"><img src="/images/image/icons/icon-86.png" alt=""></div>
+                        <input type="text" name="location" placeholder="Current Location">
+                      </div>
+                      <div class="text">[or]</div>
+                      <div class="form-group">
+                        <input type="text" name="city" placeholder="City name: Hamburg">
+                      </div>
+                      <div class="link-box"><a href="https://www.google.com/maps" target="_blank"><i
+                            class="flaticon-right-arrow"></i>Find On Map</a></div>
                     </div>
+                  </div>
                 </div>
-                <div class="owl-nav">
-                    <button type="button" role="presentation" class="owl-prev">
-                        <span class="flaticon-next"></span>
-                    </button>
-                    <button type="button" role="presentation" class="owl-next">
-                        <span class="flaticon-next"></span>
-                    </button>
-                </div>
-                <div class="owl-dots">
-                    <button role="button" class="owl-dot"><span></span></button>
-                    <button role="button" class="owl-dot"><span></span></button>
-                    <button role="button" class="owl-dot active"><span></span></button>
-                </div>
+              </div>
             </div>
-        </section>
-        <!-- banner-section end -->
-
-
-        <!-- online-service -->
-        <section class="online-service">
-            <div class="auto-container">
-                <div class="inner-container">
-                    <div class="left-column">
-                        <div class="left-content">
-                            <div class="info-box">
-                                <div class="icon-box"><img src="assets/images/icons/icon-11.png" alt=""></div>
-                                <h4>Mobile App</h4>
-                                <p>Instant Banking, Instant Peace.</p>
-                            </div>
-                            <div class="btn-box">
-                                <a href="index.html" class="play-store">
-                                    <svg><use href="assets/icons/sprite.svg#icon-play-store"></use></svg>
-                                    <span>Google Play</span>
-                                </a>
-                                <a href="index.html" class="apple-store">
-                                    <svg><use href="assets/icons/sprite.svg#icon-aplle-store"></use></svg>
-                                    <span>App Store</span>
-                                </a>
-                            </div>
-                        </div> 
-                    </div>   
-                    <div class="right-column">
-                        <div class="right-content">
-                            <div class="row">
-                                <div class="image-column">
-                                    <figure class="image-box"><img src="assets/images/resource/online-1.jpg" alt=""></figure>
-                                </div>
-                                <div class="content-column">
-                                    <div class="content-box">
-                                        <h4>Online Services</h4>
-                                        <ul class="service-list clearfix">
-                                            <li><a href="service-details.html">Mobile Banking<svg class="link-box-link"><use href="/assets/icons/sprite.svg#icon-right-arrow"></use></svg></a></li>
-                                            <li><a href="service-details.html">Net Banking<svg class="link-box-link"><use href="/assets/icons/sprite.svg#icon-right-arrow"></use></svg></a></li>
-                                            <li><a href="service-details.html">Make Payment<svg class="link-box-link"><use href="/assets/icons/sprite.svg#icon-right-arrow"></use></svg></a></li>
-                                        </ul>
-                                        <div class="link-box">
-                                            <a href="service.html"><span>+</span>More Services</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>  
-
+          </div>
+        </div>
+      </div>
+      <!--sticky Header-->
+      <div class="sticky-header hidden">
+        <div class="outer-container">
+          <div class="outer-box">
+            <div class="menu-area">
+              <div class="logo-box mr_110">
+                <figure class="logo">
+                  <a href="index.html"><img src="assets/images/logo.png" alt=""></a>
+                </figure>
+              </div>
+              <nav class="main-menu clearfix">
+                <!--Keep This Empty / Menu will come through Javascript-->
+                <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+                  <ul class="navigation clearfix">
+                    <li class="current dropdown"><a href="#">Home</a>
+                      <ul>
+                        <li><a href="index.html">Home Page 01</a></li>
+                        <li><a href="index-2.html">Home Page 02</a></li>
+                        <li><a href="index-3.html">Home Page 03</a></li>
+                        <li><a href="index-4.html">Home Page 04</a></li>
+                      </ul>
+                      <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div>
+                    </li>
+                    <li class="dropdown"><a href="#">Services</a>
+                      <ul>
+                        <li class="dropdown"><a href="#">Accounts</a>
+                          <ul>
+                            <li><a href="account.html">All Accounts</a></li>
+                            <li><a href="account-details.html">Savings Account</a></li>
+                            <li><a href="account-details-2.html">Current Account</a></li>
+                            <li><a href="account-details-3.html">Family 360º</a></li>
+                            <li><a href="account-details-4.html">Senior Citizen</a></li>
+                            <li><a href="account-details-5.html">Demat Account</a></li>
+                            <li><a href="account-details-6.html">Business Account</a></li>
+                          </ul>
+                          <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div>
+                        </li>
+                        <li class="dropdown"><a href="#">Investments</a>
+                          <ul>
+                            <li><a href="investments-details.html">Trade FX</a></li>
+                            <li><a href="investments-details-2.html">Multi Currency a/c</a></li>
+                            <li><a href="investments-details-3.html">Mutual Funds</a></li>
+                            <li><a href="investments-details-4.html">Insurance</a></li>
+                            <li><a href="investments-details-5.html">Tax-Deferred Investment</a></li>
+                            <li><a href="investments-details-6.html">Investment Advisory</a></li>
+                          </ul>
+                          <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div>
+                        </li>
+                        <li class="dropdown"><a href="#">Cards</a>
+                          <ul>
+                            <li><a href="cards.html">All Cards</a></li>
+                            <li><a href="card-details.html">Platinum Card</a></li>
+                            <li><a href="card-details-2.html">Millinnia Card</a></li>
+                            <li><a href="card-details-3.html">Money Back Card</a></li>
+                            <li><a href="card-details-4.html">Easy EMI Card</a></li>
+                            <li><a href="card-details-5.html">Dinners Club Privilege</a></li>
+                            <li><a href="card-details-6.html">Titanium Times</a></li>
+                          </ul>
+                          <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div>
+                        </li>
+                      </ul>
+                      <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div>
+                    </li>
+                    <li class="dropdown"><a href="#">About</a>
+                      <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li class="dropdown"><a href="#">Leadership</a>
+                          <ul>
+                            <li><a href="team.html">Leadership</a></li>
+                            <li><a href="team-details.html">Leadership Details</a></li>
+                          </ul>
+                          <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div>
+                        </li>
+                        <li class="dropdown"><a href="#">Careers</a>
+                          <ul>
+                            <li><a href="careers.html">Careers</a></li>
+                            <li><a href="career-details.html">Career Details</a></li>
+                          </ul>
+                          <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div>
+                        </li>
+                        <li><a href="faq.html">Faq’s</a></li>
+                        <li><a href="testimonial.html">Testimonials</a></li>
+                        <li><a href="error.html">404</a></li>
+                      </ul>
+                      <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div>
+                    </li>
+                    <li class="dropdown"><a href="#">News</a>
+                      <ul>
+                        <li><a href="blog.html">Grid View 01</a></li>
+                        <li><a href="blog-2.html">Grid View 02</a></li>
+                        <li><a href="blog-3.html">List View 01</a></li>
+                        <li><a href="blog-4.html">List View 02</a></li>
+                        <li><a href="blog-details.html">Single Post</a></li>
+                      </ul>
+                      <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div>
+                    </li>
+                    <li class="dropdown"><a href="#">Apply Now</a>
+                      <ul>
+                        <li class="dropdown"><a href="#">Loans</a>
+                          <ul>
+                            <li><a href="loans-1.html">Home Loan</a></li>
+                            <li><a href="loans-2.html">Personal Loan</a></li>
+                            <li><a href="loans-3.html">Vehicle Loan</a></li>
+                            <li><a href="loans-4.html">Education Loan</a></li>
+                            <li><a href="loans-5.html">Gold Loan</a></li>
+                          </ul>
+                          <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div>
+                        </li>
+                        <li><a href="cards-2.html">Credit Card</a></li>
+                        <li><a href="cards-3.html">Debit Card</a></li>
+                      </ul>
+                      <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div>
+                    </li>
+                    <li><a href="contact.html">Get In Touch</a></li>
+                  </ul>
                 </div>
+              </nav>
             </div>
-        </section>
-        <!-- online-service end -->
-
-
-        <!-- banking-service -->
-        <section class="banking-service sec-pad">
-            <div class="auto-container">
-                <div class="sec-title centred">
-                    <span class="sub-title">Custom Banking</span>
-                    <h2>Banking For Your Needs</h2>
-                </div>
-                <div class="tabs-box">
-                    <div class="tab-btn-box swiper bank-service-swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="tab-btn" data-tab="#tab-1">
-                                    <div class="icon-box"><img src="assets/images/icons/icon-12.png" alt=""></div>
-                                    <h3>Fixed Deposit</h3>
-                                    <p>Higher Returns &amp; Security.</p>         
-                                </div>                    
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="tab-btn" data-tab="#tab-1">
-                                    <div class="icon-box"><img src="assets/images/icons/icon-13.png" alt=""></div>
-                                    <h3>Accounts</h3>
-                                    <p>Duty the obligations business.</p>
-                                </div>                    
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="tab-btn" data-tab="#tab-1">
-                                    <div class="icon-box"><img src="assets/images/icons/icon-14.png" alt=""></div>
-                                    <h3>Investments</h3>
-                                    <p>Secure you &amp; your family.</p>      
-                                </div>                    
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="tab-btn" data-tab="#tab-1">
-                                    <div class="icon-box"><img src="assets/images/icons/icon-15.png" alt=""></div>
-                                    <h3>Family 360o</h3>
-                                    <p>Complete banking solutions.</p>       
-                                </div>                    
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="tab-btn" data-tab="#tab-1">
-                                    <div class="icon-box"><img src="assets/images/icons/icon-12.png" alt=""></div>
-                                    <h3>Fixed Deposit</h3>
-                                    <p>Higher Returns &amp; Security.</p>    
-                                </div>                    
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="tab-btn" data-tab="#tab-1">
-                                    <div class="icon-box"><img src="assets/images/icons/icon-13.png" alt=""></div>
-                                    <h3>Accounts</h3>
-                                    <p>Duty the obligations business.</p> 
-                                </div>                    
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="tab-btn" data-tab="#tab-1">
-                                    <div class="icon-box"><img src="assets/images/icons/icon-14.png" alt=""></div>
-                                    <h3>Investments</h3>
-                                    <p>Secure you &amp; your family.</p> 
-                                </div>                    
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="tab-btn" data-tab="#tab-1">
-                                    <div class="icon-box"><img src="assets/images/icons/icon-15.png" alt=""></div>
-                                    <h3>Family 360o</h3>
-                                    <p>Complete banking solutions.</p>  
-                                </div>                    
-                            </div>
-                        </div>
+            <div class="menu-right-content">
+              <div class="search-box search-toggler pr_30 mr_30"><span>Search</span> <img
+                  src="assets/images/icons/icon-7.png" alt=""></div>
+              <div class="support-box mr_50"><img src="assets/images/icons/icon-8.png" alt=""><a
+                  href="index.html">Support</a></div>
+              <div class="btn-box mr_10"><a href="index.html" class="theme-btn"><span>New Account</span></a></div>
+              <div class="nav-toggler">
+                <button type="button" class="side-panel-btn nav-btn-2"><img src="assets/images/icons/icon-10.png"
+                    alt=""></button>
+                <div class="side-panel nav-content-2">
+                  <div class="close-icon"><i class="fas fa-times"></i></div>
+                  <div class="tabs-box">
+                    <div class="tab-btns tab-buttons mb_25">
+                      <div class="tab-btn active-btn" data-tab="#branches-btn2">
+                        <h5>Branches</h5>
+                      </div>
+                      <div class="tab-btn" data-tab="#atm-btn2">
+                        <h5>ATM’s</h5>
+                      </div>
                     </div>
-
                     <div class="tabs-content">
-                        <div class="tab active-tab" id="tab-1">
-                            <div class="row clearfix">
-                                <div class="image-column">
-                                    <div class="image-box mr_35">
-                                        <figure class="image"><img src="assets/images/resource/banking-1.jpg" alt=""></figure>
-                                    </div>
-                                </div>
-                                <div class="content-column">
-                                    <div class="content-box mr_50">
-                                        <h2>Fixed Deposit</h2>
-                                        <p>Beguiled and demoralized by the charms of pleasure of the so blinded by desire that they cannot foresee.</p>
-                                        <div class="inner-box">
-                                            <h6>Key Benefits:</h6>
-                                            <ul class="list-style-one clearfix">
-                                                <li><div class="icon-box"><img src="assets/images/icons/icon-16.png" alt=""></div>100% Guaranteed returns</li>
-                                                <li><div class="icon-box"><img src="assets/images/icons/icon-16.png" alt=""></div>Loan against FD available</li>
-                                                <li><div class="icon-box"><img src="assets/images/icons/icon-16.png" alt=""></div>Flexible tenure options</li>
-                                            </ul>
-                                            <div class="inner">
-                                                <div class="icon-box"><img src="assets/images/icons/icon-17.png" alt=""></div>
-                                                <h4>Guide to <br>Fixed Deposits</h4>
-                                                <h6>pdf 6.8mb</h6>
-                                                <button type="button" class="theme-btn"><svg class="icon"><use href="assets/icons/sprite.svg#icon-right-arrow"></use></svg><span>Download</span></button>
-                                            </div>
-                                        </div>
-                                        <div class="lower-text">
-                                            <div class="icon-box"><i class="flaticon-sparkle"></i></div>
-                                            <h5>Find the Perfect <a href="index.html">FD Option</a> for Your Needs.</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                      <div class="tab active-tab" id="branches-btn2">
+                        <div class="inner-box">
+                          <div class="form-group">
+                            <div class="icon-box"><img src="assets/images/icons/icon-86.png" alt=""></div>
+                            <input type="text" name="location" placeholder="Current Location">
+                          </div>
+                          <div class="text">[or]</div>
+                          <div class="form-group">
+                            <input type="text" name="city" placeholder="City name: Hamburg">
+                          </div>
+                          <div class="link-box"><a href="https://www.google.com/maps" target="_blank"><i
+                                class="flaticon-right-arrow"></i>Find On Map</a></div>
                         </div>
-                        <div class="tab" id="tab-2">
-                            <div class="row clearfix">
-                                <div class="col-lg-6 col-md-12 col-sm-12 image-column">
-                                    <div class="image-box mr_35">
-                                        <figure class="image"><img src="assets/images/resource/banking-1.jpg" alt=""></figure>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-12 col-sm-12 content-column">
-                                    <div class="content-box mr_50">
-                                        <h2>Accounts</h2>
-                                        <p>Beguiled and demoralized by the charms of pleasure of the so blinded by desire that they cannot foresee.</p>
-                                        <div class="inner-box">
-                                            <h6>Key Benefits:</h6>
-                                            <ul class="list-style-one clearfix">
-                                                <li><div class="icon-box"><img src="assets/images/icons/icon-16.png" alt=""></div>100% Guaranteed returns</li>
-                                                <li><div class="icon-box"><img src="assets/images/icons/icon-16.png" alt=""></div>Loan against FD available</li>
-                                                <li><div class="icon-box"><img src="assets/images/icons/icon-16.png" alt=""></div>Flexible tenure options</li>
-                                            </ul>
-                                            <div class="inner">
-                                                <div class="icon-box"><img src="assets/images/icons/icon-17.png" alt=""></div>
-                                                <h4>Guide to <br>Fixed Deposits</h4>
-                                                <h6>pdf 6.8mb</h6>
-                                                <button type="button" class="theme-btn"><span>Download</span></button>
-                                            </div>
-                                        </div>
-                                        <div class="lower-text">
-                                            <div class="icon-box"><i class="flaticon-sparkle"></i></div>
-                                            <h5>Find the Perfect <a href="index.html">FD Option</a> for Your Needs.</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                      </div>
+                      <div class="tab" id="atm-btn2">
+                        <div class="inner-box">
+                          <div class="form-group">
+                            <div class="icon-box"><img src="assets/images/icons/icon-86.png" alt=""></div>
+                            <input type="text" name="location" placeholder="Current Location">
+                          </div>
+                          <div class="text">[or]</div>
+                          <div class="form-group">
+                            <input type="text" name="city" placeholder="City name: Hamburg">
+                          </div>
+                          <div class="link-box"><a href="https://www.google.com/maps" target="_blank"><i
+                                class="flaticon-right-arrow"></i>Find On Map</a></div>
                         </div>
-                        <div class="tab" id="tab-3">
-                            <div class="row clearfix">
-                                <div class="col-lg-6 col-md-12 col-sm-12 image-column">
-                                    <div class="image-box mr_35">
-                                        <figure class="image"><img src="assets/images/resource/banking-1.jpg" alt=""></figure>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-12 col-sm-12 content-column">
-                                    <div class="content-box mr_50">
-                                        <h2>Investments</h2>
-                                        <p>Beguiled and demoralized by the charms of pleasure of the so blinded by desire that they cannot foresee.</p>
-                                        <div class="inner-box">
-                                            <h6>Key Benefits:</h6>
-                                            <ul class="list-style-one clearfix">
-                                                <li><div class="icon-box"><img src="assets/images/icons/icon-16.png" alt=""></div>100% Guaranteed returns</li>
-                                                <li><div class="icon-box"><img src="assets/images/icons/icon-16.png" alt=""></div>Loan against FD available</li>
-                                                <li><div class="icon-box"><img src="assets/images/icons/icon-16.png" alt=""></div>Flexible tenure options</li>
-                                            </ul>
-                                            <div class="inner">
-                                                <div class="icon-box"><img src="assets/images/icons/icon-17.png" alt=""></div>
-                                                <h4>Guide to <br>Fixed Deposits</h4>
-                                                <h6>pdf 6.8mb</h6>
-                                                <button type="button" class="theme-btn"><span>Download</span></button>
-                                            </div>
-                                        </div>
-                                        <div class="lower-text">
-                                            <div class="icon-box"><i class="flaticon-sparkle"></i></div>
-                                            <h5>Find the Perfect <a href="index.html">FD Option</a> for Your Needs.</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab" id="tab-4">
-                            <div class="row clearfix">
-                                <div class="col-lg-6 col-md-12 col-sm-12 image-column">
-                                    <div class="image-box mr_35">
-                                        <figure class="image"><img src="assets/images/resource/banking-1.jpg" alt=""></figure>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-12 col-sm-12 content-column">
-                                    <div class="content-box mr_50">
-                                        <h2>Family 360o</h2>
-                                        <p>Beguiled and demoralized by the charms of pleasure of the so blinded by desire that they cannot foresee.</p>
-                                        <div class="inner-box">
-                                            <h6>Key Benefits:</h6>
-                                            <ul class="list-style-one clearfix">
-                                                <li><div class="icon-box"><img src="assets/images/icons/icon-16.png" alt=""></div>100% Guaranteed returns</li>
-                                                <li><div class="icon-box"><img src="assets/images/icons/icon-16.png" alt=""></div>Loan against FD available</li>
-                                                <li><div class="icon-box"><img src="assets/images/icons/icon-16.png" alt=""></div>Flexible tenure options</li>
-                                            </ul>
-                                            <div class="inner">
-                                                <div class="icon-box"><img src="assets/images/icons/icon-17.png" alt=""></div>
-                                                <h4>Guide to <br>Fixed Deposits</h4>
-                                                <h6>pdf 6.8mb</h6>
-                                                <button type="button" class="theme-btn"><span>Download</span></button>
-                                            </div>
-                                        </div>
-                                        <div class="lower-text">
-                                            <div class="icon-box"><i class="flaticon-sparkle"></i></div>
-                                            <h5>Find the Perfect <a href="index.html">FD Option</a> for Your Needs.</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab" id="tab-5">
-                            <div class="row clearfix">
-                                <div class="col-lg-6 col-md-12 col-sm-12 image-column">
-                                    <div class="image-box mr_35">
-                                        <figure class="image"><img src="assets/images/resource/banking-1.jpg" alt=""></figure>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-12 col-sm-12 content-column">
-                                    <div class="content-box mr_50">
-                                        <h2>Fixed Deposit</h2>
-                                        <p>Beguiled and demoralized by the charms of pleasure of the so blinded by desire that they cannot foresee.</p>
-                                        <div class="inner-box">
-                                            <h6>Key Benefits:</h6>
-                                            <ul class="list-style-one clearfix">
-                                                <li><div class="icon-box"><img src="assets/images/icons/icon-16.png" alt=""></div>100% Guaranteed returns</li>
-                                                <li><div class="icon-box"><img src="assets/images/icons/icon-16.png" alt=""></div>Loan against FD available</li>
-                                                <li><div class="icon-box"><img src="assets/images/icons/icon-16.png" alt=""></div>Flexible tenure options</li>
-                                            </ul>
-                                            <div class="inner">
-                                                <div class="icon-box"><img src="assets/images/icons/icon-17.png" alt=""></div>
-                                                <h4>Guide to <br>Fixed Deposits</h4>
-                                                <h6>pdf 6.8mb</h6>
-                                                <button type="button" class="theme-btn"><span>Download</span></button>
-                                            </div>
-                                        </div>
-                                        <div class="lower-text">
-                                            <div class="icon-box"><i class="flaticon-sparkle"></i></div>
-                                            <h5>Find the Perfect <a href="index.html">FD Option</a> for Your Needs.</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab" id="tab-6">
-                            <div class="row clearfix">
-                                <div class="col-lg-6 col-md-12 col-sm-12 image-column">
-                                    <div class="image-box mr_35">
-                                        <figure class="image"><img src="assets/images/resource/banking-1.jpg" alt=""></figure>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-12 col-sm-12 content-column">
-                                    <div class="content-box mr_50">
-                                        <h2>Accounts</h2>
-                                        <p>Beguiled and demoralized by the charms of pleasure of the so blinded by desire that they cannot foresee.</p>
-                                        <div class="inner-box">
-                                            <h6>Key Benefits:</h6>
-                                            <ul class="list-style-one clearfix">
-                                                <li><div class="icon-box"><img src="assets/images/icons/icon-16.png" alt=""></div>100% Guaranteed returns</li>
-                                                <li><div class="icon-box"><img src="assets/images/icons/icon-16.png" alt=""></div>Loan against FD available</li>
-                                                <li><div class="icon-box"><img src="assets/images/icons/icon-16.png" alt=""></div>Flexible tenure options</li>
-                                            </ul>
-                                            <div class="inner">
-                                                <div class="icon-box"><img src="assets/images/icons/icon-17.png" alt=""></div>
-                                                <h4>Guide to <br>Fixed Deposits</h4>
-                                                <h6>pdf 6.8mb</h6>
-                                                <button type="button" class="theme-btn"><span>Download</span></button>
-                                            </div>
-                                        </div>
-                                        <div class="lower-text">
-                                            <div class="icon-box"><i class="flaticon-sparkle"></i></div>
-                                            <h5>Find the Perfect <a href="index.html">FD Option</a> for Your Needs.</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab" id="tab-7">
-                            <div class="row clearfix">
-                                <div class="col-lg-6 col-md-12 col-sm-12 image-column">
-                                    <div class="image-box mr_35">
-                                        <figure class="image"><img src="assets/images/resource/banking-1.jpg" alt=""></figure>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-12 col-sm-12 content-column">
-                                    <div class="content-box mr_50">
-                                        <h2>Investments</h2>
-                                        <p>Beguiled and demoralized by the charms of pleasure of the so blinded by desire that they cannot foresee.</p>
-                                        <div class="inner-box">
-                                            <h6>Key Benefits:</h6>
-                                            <ul class="list-style-one clearfix">
-                                                <li><div class="icon-box"><img src="assets/images/icons/icon-16.png" alt=""></div>100% Guaranteed returns</li>
-                                                <li><div class="icon-box"><img src="assets/images/icons/icon-16.png" alt=""></div>Loan against FD available</li>
-                                                <li><div class="icon-box"><img src="assets/images/icons/icon-16.png" alt=""></div>Flexible tenure options</li>
-                                            </ul>
-                                            <div class="inner">
-                                                <div class="icon-box"><img src="assets/images/icons/icon-17.png" alt=""></div>
-                                                <h4>Guide to <br>Fixed Deposits</h4>
-                                                <h6>pdf 6.8mb</h6>
-                                                <button type="button" class="theme-btn"><span>Download</span></button>
-                                            </div>
-                                        </div>
-                                        <div class="lower-text">
-                                            <div class="icon-box"><i class="flaticon-sparkle"></i></div>
-                                            <h5>Find the Perfect <a href="index.html">FD Option</a> for Your Needs.</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab" id="tab-8">
-                            <div class="row clearfix">
-                                <div class="col-lg-6 col-md-12 col-sm-12 image-column">
-                                    <div class="image-box mr_35">
-                                        <figure class="image"><img src="assets/images/resource/banking-1.jpg" alt=""></figure>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-12 col-sm-12 content-column">
-                                    <div class="content-box mr_50">
-                                        <h2>Family 360o</h2>
-                                        <p>Beguiled and demoralized by the charms of pleasure of the so blinded by desire that they cannot foresee.</p>
-                                        <div class="inner-box">
-                                            <h6>Key Benefits:</h6>
-                                            <ul class="list-style-one clearfix">
-                                                <li><div class="icon-box"><img src="assets/images/icons/icon-16.png" alt=""></div>100% Guaranteed returns</li>
-                                                <li><div class="icon-box"><img src="assets/images/icons/icon-16.png" alt=""></div>Loan against FD available</li>
-                                                <li><div class="icon-box"><img src="assets/images/icons/icon-16.png" alt=""></div>Flexible tenure options</li>
-                                            </ul>
-                                            <div class="inner">
-                                                <div class="icon-box"><img src="assets/images/icons/icon-17.png" alt=""></div>
-                                                <h4>Guide to <br>Fixed Deposits</h4>
-                                                <h6>pdf 6.8mb</h6>
-                                                <button type="button" class="theme-btn"><span>Download</span></button>
-                                            </div>
-                                        </div>
-                                        <div class="lower-text">
-                                            <div class="icon-box"><i class="flaticon-sparkle"></i></div>
-                                            <h5>Find the Perfect <a href="index.html">FD Option</a> for Your Needs.</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </section>
-        <!-- banking-service end -->
+          </div>
+        </div>
+      </div>
+    </header>
 
-
-        <!-- secure-growth -->
-        <!-- <section class="secure-growth bg-color-1">
-            <div class="auto-container">
-                <div class="sec-title">
-                    <span class="sub-title">Secure Growth</span>
-                    <h2>Enhance Your Wealth Safely</h2>
+    <section data-tille="banner-section">
+      <div class="banner-section">
+        <div class="banner-carousel owl-theme owl-carousel owl-loaded owl-drag">
+          <div class="owl-stage-outer">
+            <div class="owl-stage" style="transform: translate3d(-5368px, 0px, 0px); transition: all; width: 2000px;">
+              <div class="owl-item cloned" style="width: 1342px;">
+                <div class="slide-item p_relative">
+                  <div class="bg-layer" style="background-image: url(assets/images/banner/banner-2.jpg);"></div>
+                  <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-1.png);"></div>
+                  <div class="outer-container">
+                    <div class="content-box">
+                      <h5><span>Business Loan</span> From 8.5% APR</h5>
+                      <h2>Fuel your business growth with our easy loan</h2>
+                      <div class="btn-box"><a href="loans-1.html" class="theme-btn"><span>Apply Your Loan</span></a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="three-item-carousel owl-carousel owl-theme owl-dots-none nav-style-one owl-loaded owl-drag">
-                    
-                    
-                    
-                <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-2000px, 0px, 0px); transition: 0.5s; width: 3600px;"><div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><div class="growth-block-one">
-                        <div class="inner-box">
-                            <h3><a href="index.html">Trade FX</a></h3>
-                            <p>Perfectly simple easy distinguish to the claims of duty...</p>
-                            <div class="image-box">
-                                <figure class="image"><img src="assets/images/resource/growth-1.jpg" alt=""></figure>
-                                <div class="icon-box"><img src="assets/images/icons/icon-18.png" alt=""></div>
-                            </div>
-                            <div class="link-box"><a href="index.html"><i class="flaticon-right-arrow"></i>Read More</a></div>
-                        </div>
-                    </div></div><div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><div class="growth-block-one">
-                        <div class="inner-box">
-                            <h3><a href="index.html">Multi Currency a/c</a></h3>
-                            <p>Duty through weaknes will which is same as saying through...</p>
-                            <div class="image-box">
-                                <figure class="image"><img src="assets/images/resource/growth-2.jpg" alt=""></figure>
-                                <div class="icon-box"><img src="assets/images/icons/icon-19.png" alt=""></div>
-                            </div>
-                            <div class="link-box"><a href="index.html"><i class="flaticon-right-arrow"></i>Read More</a></div>
-                        </div>
-                    </div></div><div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><div class="growth-block-one">
-                        <div class="inner-box">
-                            <h3><a href="index.html">Mutual Funds</a></h3>
-                            <p>Choice is when nothing prevents our being able to do...</p>
-                            <div class="image-box">
-                                <figure class="image"><img src="assets/images/resource/growth-3.jpg" alt=""></figure>
-                                <div class="icon-box"><img src="assets/images/icons/icon-20.png" alt=""></div>
-                            </div>
-                            <div class="link-box"><a href="index.html"><i class="flaticon-right-arrow"></i>Read More</a></div>
-                        </div>
-                    </div></div><div class="owl-item" style="width: 370px; margin-right: 30px;"><div class="growth-block-one">
-                        <div class="inner-box">
-                            <h3><a href="index.html">Trade FX</a></h3>
-                            <p>Perfectly simple easy distinguish to the claims of duty...</p>
-                            <div class="image-box">
-                                <figure class="image"><img src="assets/images/resource/growth-1.jpg" alt=""></figure>
-                                <div class="icon-box"><img src="assets/images/icons/icon-18.png" alt=""></div>
-                            </div>
-                            <div class="link-box"><a href="index.html"><i class="flaticon-right-arrow"></i>Read More</a></div>
-                        </div>
-                    </div></div><div class="owl-item" style="width: 370px; margin-right: 30px;"><div class="growth-block-one">
-                        <div class="inner-box">
-                            <h3><a href="index.html">Multi Currency a/c</a></h3>
-                            <p>Duty through weaknes will which is same as saying through...</p>
-                            <div class="image-box">
-                                <figure class="image"><img src="assets/images/resource/growth-2.jpg" alt=""></figure>
-                                <div class="icon-box"><img src="assets/images/icons/icon-19.png" alt=""></div>
-                            </div>
-                            <div class="link-box"><a href="index.html"><i class="flaticon-right-arrow"></i>Read More</a></div>
-                        </div>
-                    </div></div><div class="owl-item active" style="width: 370px; margin-right: 30px;"><div class="growth-block-one">
-                        <div class="inner-box">
-                            <h3><a href="index.html">Mutual Funds</a></h3>
-                            <p>Choice is when nothing prevents our being able to do...</p>
-                            <div class="image-box">
-                                <figure class="image"><img src="assets/images/resource/growth-3.jpg" alt=""></figure>
-                                <div class="icon-box"><img src="assets/images/icons/icon-20.png" alt=""></div>
-                            </div>
-                            <div class="link-box"><a href="index.html"><i class="flaticon-right-arrow"></i>Read More</a></div>
-                        </div>
-                    </div></div><div class="owl-item cloned active" style="width: 370px; margin-right: 30px;"><div class="growth-block-one">
-                        <div class="inner-box">
-                            <h3><a href="index.html">Trade FX</a></h3>
-                            <p>Perfectly simple easy distinguish to the claims of duty...</p>
-                            <div class="image-box">
-                                <figure class="image"><img src="assets/images/resource/growth-1.jpg" alt=""></figure>
-                                <div class="icon-box"><img src="assets/images/icons/icon-18.png" alt=""></div>
-                            </div>
-                            <div class="link-box"><a href="index.html"><i class="flaticon-right-arrow"></i>Read More</a></div>
-                        </div>
-                    </div></div><div class="owl-item cloned active" style="width: 370px; margin-right: 30px;"><div class="growth-block-one">
-                        <div class="inner-box">
-                            <h3><a href="index.html">Multi Currency a/c</a></h3>
-                            <p>Duty through weaknes will which is same as saying through...</p>
-                            <div class="image-box">
-                                <figure class="image"><img src="assets/images/resource/growth-2.jpg" alt=""></figure>
-                                <div class="icon-box"><img src="assets/images/icons/icon-19.png" alt=""></div>
-                            </div>
-                            <div class="link-box"><a href="index.html"><i class="flaticon-right-arrow"></i>Read More</a></div>
-                        </div>
-                    </div></div><div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><div class="growth-block-one">
-                        <div class="inner-box">
-                            <h3><a href="index.html">Mutual Funds</a></h3>
-                            <p>Choice is when nothing prevents our being able to do...</p>
-                            <div class="image-box">
-                                <figure class="image"><img src="assets/images/resource/growth-3.jpg" alt=""></figure>
-                                <div class="icon-box"><img src="assets/images/icons/icon-20.png" alt=""></div>
-                            </div>
-                            <div class="link-box"><a href="index.html"><i class="flaticon-right-arrow"></i>Read More</a></div>
-                        </div>
-                    </div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span class="flaticon-next"></span></button><button type="button" role="presentation" class="owl-next"><span class="flaticon-next"></span></button></div><div class="owl-dots disabled"><button role="button" class="owl-dot active"><span></span></button></div></div>
-                <div class="more-text centred">
-                    <h5><i class="flaticon-sparkle"></i>Find the Perfect <a href="index.html">FD Option</a> for Your Needs.</h5>
+              </div>
+              <div class="owl-item cloned" style="width: 1342px;">
+                <div class="slide-item p_relative">
+                  <div class="bg-layer" style="background-image: url(assets/images/banner/banner-3.jpg);"></div>
+                  <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-1.png);"></div>
+                  <div class="outer-container">
+                    <div class="content-box">
+                      <h5><span>Credit Card</span> Enjoy 0% Annual Fee</h5>
+                      <h2>Maximize benefits with your every transaction</h2>
+                      <div class="btn-box"><a href="cards.html" class="theme-btn"><span>Apply Your Card</span></a></div>
+                    </div>
+                  </div>
                 </div>
+              </div>
+              <div class="owl-item" style="width: 1342px;">
+                <div class="slide-item p_relative">
+                  <div class="bg-layer" style="background-image: url(assets/images/banner/banner-1.jpg);"></div>
+                  <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-1.png);"></div>
+                  <div class="outer-container">
+                    <div class="content-box">
+                      <h5><span>Flexi Savings</span> Earn up to 2.5% APY</h5>
+                      <h2>Enjoy zero free banking on your sb account.</h2>
+                      <div class="btn-box"><a href="service-details.html" class="theme-btn"><span>Book a
+                            Consultation</span></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="owl-item animated owl-animated-out fadeOut" style="width: 1342px; left: 1342px;">
+                <div class="slide-item p_relative">
+                  <div class="bg-layer" style="background-image: url(assets/images/banner/banner-2.jpg);"></div>
+                  <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-1.png);"></div>
+                  <div class="outer-container">
+                    <div class="content-box">
+                      <h5><span>Business Loan</span> From 8.5% APR</h5>
+                      <h2>Fuel your business growth with our easy loan</h2>
+                      <div class="btn-box"><a href="loans-1.html" class="theme-btn"><span>Apply Your Loan</span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="owl-item animated owl-animated-in fadeIn active" style="width: 1342px;">
+                <div class="slide-item p_relative">
+                  <div class="bg-layer" style="background-image: url(assets/images/banner/banner-3.jpg);"></div>
+                  <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-1.png);"></div>
+                  <div class="outer-container">
+                    <div class="content-box">
+                      <h5><span>Credit Card</span> Enjoy 0% Annual Fee</h5>
+                      <h2>Maximize benefits with your every transaction</h2>
+                      <div class="btn-box"><a href="cards.html" class="theme-btn"><span>Apply Your Card</span></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="owl-item cloned" style="width: 1342px;">
+                <div class="slide-item p_relative">
+                  <div class="bg-layer" style="background-image: url(assets/images/banner/banner-1.jpg);"></div>
+                  <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-1.png);"></div>
+                  <div class="outer-container">
+                    <div class="content-box">
+                      <h5><span>Flexi Savings</span> Earn up to 2.5% APY</h5>
+                      <h2>Enjoy zero free banking on your sb account.</h2>
+                      <div class="btn-box"><a href="service-details.html" class="theme-btn"><span>Book a
+                            Consultation</span></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="owl-item cloned" style="width: 1342px;">
+                <div class="slide-item p_relative">
+                  <div class="bg-layer" style="background-image: url(assets/images/banner/banner-2.jpg);"></div>
+                  <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-1.png);"></div>
+                  <div class="outer-container">
+                    <div class="content-box">
+                      <h5><span>Business Loan</span> From 8.5% APR</h5>
+                      <h2>Fuel your business growth with our easy loan</h2>
+                      <div class="btn-box"><a href="loans-1.html" class="theme-btn"><span>Apply Your Loan</span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section> -->
-        <!-- secure-growth end -->
+          </div>
+          <div class="owl-nav">
+            <button type="button" role="presentation" class="owl-prev">
+              <span class="flaticon-next"></span>
+            </button>
+            <button type="button" role="presentation" class="owl-next">
+              <span class="flaticon-next"></span>
+            </button>
+          </div>
+          <div class="owl-dots">
+            <button role="button" class="owl-dot"><span></span></button>
+            <button role="button" class="owl-dot"><span></span></button>
+            <button role="button" class="owl-dot active"><span></span></button>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section data-tille="online-service">
+      <div class="online-service">
+        <div class="auto-container">
+          <div class="inner-container">
+            <div class="left-column">
+              <div class="left-content">
+                <div class="info-box">
+                  <div class="icon-box">
+                    <img src="assets/images/icons/icon-11.png" alt="">
+                  </div>
+                  <h4>Mobile App</h4>
+                  <p>Instant Banking, Instant Peace.</p>
+                </div>
+                <div class="btn-box">
+                  <a href="index.html" class="play-store">
+                    <svg>
+                      <use href="assets/icons/sprite.svg#icon-play-store"></use>
+                    </svg>
+                    <span>Google Play</span>
+                  </a>
+                  <a href="index.html" class="apple-store">
+                    <svg>
+                      <use href="assets/icons/sprite.svg#icon-aplle-store"></use>
+                    </svg>
+                    <span>App Store</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="right-column">
+              <div class="right-content">
+                <div class="row">
+                  <div class="image-column">
+                    <figure class="image-box"><img src="assets/images/resource/online-1.jpg" alt=""></figure>
+                  </div>
+                  <div class="content-column">
+                    <div class="content-box">
+                      <h4>Online Services</h4>
+                      <ul class="service-list clearfix">
+                        <li><a href="service-details.html">Mobile Banking<svg class="link-box-link">
+                              <use href="/assets/icons/sprite.svg#icon-right-arrow"></use>
+                            </svg></a></li>
+                        <li><a href="service-details.html">Net Banking<svg class="link-box-link">
+                              <use href="/assets/icons/sprite.svg#icon-right-arrow"></use>
+                            </svg></a></li>
+                        <li><a href="service-details.html">Make Payment<svg class="link-box-link">
+                              <use href="/assets/icons/sprite.svg#icon-right-arrow"></use>
+                            </svg></a></li>
+                      </ul>
+                      <div class="link-box">
+                        <a href="service.html"><span>+</span>More Services</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- custom-banking -->
-        <!-- <section class="custom-banking sec-pad bg-color-1">
+    <section data-tille="banking-service">
+      <div class="banking-service">
+        <div class="auto-container">
+          <div class="sec-title centred">
+            <span class="sub-title">Custom Banking</span>
+            <h2>Banking For Your Needs</h2>
+          </div>
+          <div class="tabs-box">
+            <div class="tab-btn-box swiper bank-service-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="tab-btn" data-tab="#tab-1">
+                    <div class="icon-box"><img src="assets/images/icons/icon-12.png" alt=""></div>
+                    <h3>Fixed Deposit</h3>
+                    <p>Higher Returns &amp; Security.</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="tab-btn" data-tab="#tab-1">
+                    <div class="icon-box"><img src="assets/images/icons/icon-13.png" alt=""></div>
+                    <h3>Accounts</h3>
+                    <p>Duty the obligations business.</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="tab-btn" data-tab="#tab-1">
+                    <div class="icon-box"><img src="assets/images/icons/icon-14.png" alt=""></div>
+                    <h3>Investments</h3>
+                    <p>Secure you &amp; your family.</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="tab-btn" data-tab="#tab-1">
+                    <div class="icon-box"><img src="assets/images/icons/icon-15.png" alt=""></div>
+                    <h3>Family 360o</h3>
+                    <p>Complete banking solutions.</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="tab-btn" data-tab="#tab-1">
+                    <div class="icon-box"><img src="assets/images/icons/icon-12.png" alt=""></div>
+                    <h3>Fixed Deposit</h3>
+                    <p>Higher Returns &amp; Security.</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="tab-btn" data-tab="#tab-1">
+                    <div class="icon-box"><img src="assets/images/icons/icon-13.png" alt=""></div>
+                    <h3>Accounts</h3>
+                    <p>Duty the obligations business.</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="tab-btn" data-tab="#tab-1">
+                    <div class="icon-box"><img src="assets/images/icons/icon-14.png" alt=""></div>
+                    <h3>Investments</h3>
+                    <p>Secure you &amp; your family.</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="tab-btn" data-tab="#tab-1">
+                    <div class="icon-box"><img src="assets/images/icons/icon-15.png" alt=""></div>
+                    <h3>Family 360o</h3>
+                    <p>Complete banking solutions.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="tabs-content">
+              <div class="tab active-tab" id="tab-1">
+                <div class="row clearfix">
+                  <div class="image-column">
+                    <div class="image-box mr_35">
+                      <figure class="image"><img src="assets/images/resource/banking-1.jpg" alt=""></figure>
+                    </div>
+                  </div>
+                  <div class="content-column">
+                    <div class="content-box mr_50">
+                      <h2>Fixed Deposit</h2>
+                      <p>Beguiled and demoralized by the charms of pleasure of the so blinded by desire that they cannot
+                        foresee.</p>
+                      <div class="inner-box">
+                        <h6>Key Benefits:</h6>
+                        <ul class="list-style-one clearfix">
+                          <li>
+                            <div class="icon-box"><img src="assets/images/icons/icon-16.png" alt=""></div>100% Guaranteed
+                            returns
+                          </li>
+                          <li>
+                            <div class="icon-box"><img src="assets/images/icons/icon-16.png" alt=""></div>Loan against FD
+                            available
+                          </li>
+                          <li>
+                            <div class="icon-box"><img src="assets/images/icons/icon-16.png" alt=""></div>Flexible tenure
+                            options
+                          </li>
+                        </ul>
+                        <div class="inner">
+                          <div class="icon-box"><img src="assets/images/icons/icon-17.png" alt=""></div>
+                          <h4>Guide to <br>Fixed Deposits</h4>
+                          <h6>pdf 6.8mb</h6>
+                          <button type="button" class="theme-btn"><svg class="icon hidden">
+                              <use href="assets/icons/sprite.svg#icon-right-arrow"></use>
+                            </svg><span>Download</span></button>
+                        </div>
+                      </div>
+                      <div class="lower-text">
+                        <div class="icon-box"><i class="flaticon-sparkle"></i></div>
+                        <h5>Find the Perfect <a href="index.html">FD Option</a> for Your Needs.</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab" id="tab-2">
+                <div class="row clearfix">
+                  <div class="image-column">
+                    <div class="image-box mr_35">
+                      <figure class="image"><img src="assets/images/resource/banking-1.jpg" alt=""></figure>
+                    </div>
+                  </div>
+                  <div class="content-column">
+                    <div class="content-box mr_50">
+                      <h2>Accounts</h2>
+                      <p>Beguiled and demoralized by the charms of pleasure of the so blinded by desire that they cannot
+                        foresee.</p>
+                      <div class="inner-box">
+                        <h6>Key Benefits:</h6>
+                        <ul class="list-style-one clearfix">
+                          <li>
+                            <div class="icon-box"><img src="assets/images/icons/icon-16.png" alt=""></div>100% Guaranteed
+                            returns
+                          </li>
+                          <li>
+                            <div class="icon-box"><img src="assets/images/icons/icon-16.png" alt=""></div>Loan against FD
+                            available
+                          </li>
+                          <li>
+                            <div class="icon-box"><img src="assets/images/icons/icon-16.png" alt=""></div>Flexible tenure
+                            options
+                          </li>
+                        </ul>
+                        <div class="inner">
+                          <div class="icon-box"><img src="assets/images/icons/icon-17.png" alt=""></div>
+                          <h4>Guide to <br>Fixed Deposits</h4>
+                          <h6>pdf 6.8mb</h6>
+                          <button type="button" class="theme-btn"><span>Download</span></button>
+                        </div>
+                      </div>
+                      <div class="lower-text">
+                        <div class="icon-box"><i class="flaticon-sparkle"></i></div>
+                        <h5>Find the Perfect <a href="index.html">FD Option</a> for Your Needs.</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab" id="tab-3">
+                <div class="row clearfix">
+                  <div class="image-column">
+                    <div class="image-box mr_35">
+                      <figure class="image"><img src="assets/images/resource/banking-1.jpg" alt=""></figure>
+                    </div>
+                  </div>
+                  <div class="content-column">
+                    <div class="content-box mr_50">
+                      <h2>Investments</h2>
+                      <p>Beguiled and demoralized by the charms of pleasure of the so blinded by desire that they cannot
+                        foresee.</p>
+                      <div class="inner-box">
+                        <h6>Key Benefits:</h6>
+                        <ul class="list-style-one clearfix">
+                          <li>
+                            <div class="icon-box"><img src="assets/images/icons/icon-16.png" alt=""></div>100% Guaranteed
+                            returns
+                          </li>
+                          <li>
+                            <div class="icon-box"><img src="assets/images/icons/icon-16.png" alt=""></div>Loan against FD
+                            available
+                          </li>
+                          <li>
+                            <div class="icon-box"><img src="assets/images/icons/icon-16.png" alt=""></div>Flexible tenure
+                            options
+                          </li>
+                        </ul>
+                        <div class="inner">
+                          <div class="icon-box"><img src="assets/images/icons/icon-17.png" alt=""></div>
+                          <h4>Guide to <br>Fixed Deposits</h4>
+                          <h6>pdf 6.8mb</h6>
+                          <button type="button" class="theme-btn"><span>Download</span></button>
+                        </div>
+                      </div>
+                      <div class="lower-text">
+                        <div class="icon-box"><i class="flaticon-sparkle"></i></div>
+                        <h5>Find the Perfect <a href="index.html">FD Option</a> for Your Needs.</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab" id="tab-4">
+                <div class="row clearfix">
+                  <div class="image-column">
+                    <div class="image-box mr_35">
+                      <figure class="image"><img src="assets/images/resource/banking-1.jpg" alt=""></figure>
+                    </div>
+                  </div>
+                  <div class="content-column">
+                    <div class="content-box mr_50">
+                      <h2>Family 360o</h2>
+                      <p>Beguiled and demoralized by the charms of pleasure of the so blinded by desire that they cannot
+                        foresee.</p>
+                      <div class="inner-box">
+                        <h6>Key Benefits:</h6>
+                        <ul class="list-style-one clearfix">
+                          <li>
+                            <div class="icon-box"><img src="assets/images/icons/icon-16.png" alt=""></div>100% Guaranteed
+                            returns
+                          </li>
+                          <li>
+                            <div class="icon-box"><img src="assets/images/icons/icon-16.png" alt=""></div>Loan against FD
+                            available
+                          </li>
+                          <li>
+                            <div class="icon-box"><img src="assets/images/icons/icon-16.png" alt=""></div>Flexible tenure
+                            options
+                          </li>
+                        </ul>
+                        <div class="inner">
+                          <div class="icon-box"><img src="assets/images/icons/icon-17.png" alt=""></div>
+                          <h4>Guide to <br>Fixed Deposits</h4>
+                          <h6>pdf 6.8mb</h6>
+                          <button type="button" class="theme-btn"><span>Download</span></button>
+                        </div>
+                      </div>
+                      <div class="lower-text">
+                        <div class="icon-box"><i class="flaticon-sparkle"></i></div>
+                        <h5>Find the Perfect <a href="index.html">FD Option</a> for Your Needs.</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab" id="tab-5">
+                <div class="row clearfix">
+                  <div class="image-column">
+                    <div class="image-box mr_35">
+                      <figure class="image"><img src="assets/images/resource/banking-1.jpg" alt=""></figure>
+                    </div>
+                  </div>
+                  <div class="content-column">
+                    <div class="content-box mr_50">
+                      <h2>Fixed Deposit</h2>
+                      <p>Beguiled and demoralized by the charms of pleasure of the so blinded by desire that they cannot
+                        foresee.</p>
+                      <div class="inner-box">
+                        <h6>Key Benefits:</h6>
+                        <ul class="list-style-one clearfix">
+                          <li>
+                            <div class="icon-box"><img src="assets/images/icons/icon-16.png" alt=""></div>100% Guaranteed
+                            returns
+                          </li>
+                          <li>
+                            <div class="icon-box"><img src="assets/images/icons/icon-16.png" alt=""></div>Loan against FD
+                            available
+                          </li>
+                          <li>
+                            <div class="icon-box"><img src="assets/images/icons/icon-16.png" alt=""></div>Flexible tenure
+                            options
+                          </li>
+                        </ul>
+                        <div class="inner">
+                          <div class="icon-box"><img src="assets/images/icons/icon-17.png" alt=""></div>
+                          <h4>Guide to <br>Fixed Deposits</h4>
+                          <h6>pdf 6.8mb</h6>
+                          <button type="button" class="theme-btn"><span>Download</span></button>
+                        </div>
+                      </div>
+                      <div class="lower-text">
+                        <div class="icon-box"><i class="flaticon-sparkle"></i></div>
+                        <h5>Find the Perfect <a href="index.html">FD Option</a> for Your Needs.</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab" id="tab-6">
+                <div class="row clearfix">
+                  <div class="image-column">
+                    <div class="image-box mr_35">
+                      <figure class="image"><img src="assets/images/resource/banking-1.jpg" alt=""></figure>
+                    </div>
+                  </div>
+                  <div class="content-column">
+                    <div class="content-box mr_50">
+                      <h2>Accounts</h2>
+                      <p>Beguiled and demoralized by the charms of pleasure of the so blinded by desire that they cannot
+                        foresee.</p>
+                      <div class="inner-box">
+                        <h6>Key Benefits:</h6>
+                        <ul class="list-style-one clearfix">
+                          <li>
+                            <div class="icon-box"><img src="assets/images/icons/icon-16.png" alt=""></div>100% Guaranteed
+                            returns
+                          </li>
+                          <li>
+                            <div class="icon-box"><img src="assets/images/icons/icon-16.png" alt=""></div>Loan against FD
+                            available
+                          </li>
+                          <li>
+                            <div class="icon-box"><img src="assets/images/icons/icon-16.png" alt=""></div>Flexible tenure
+                            options
+                          </li>
+                        </ul>
+                        <div class="inner">
+                          <div class="icon-box"><img src="assets/images/icons/icon-17.png" alt=""></div>
+                          <h4>Guide to <br>Fixed Deposits</h4>
+                          <h6>pdf 6.8mb</h6>
+                          <button type="button" class="theme-btn"><span>Download</span></button>
+                        </div>
+                      </div>
+                      <div class="lower-text">
+                        <div class="icon-box"><i class="flaticon-sparkle"></i></div>
+                        <h5>Find the Perfect <a href="index.html">FD Option</a> for Your Needs.</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab" id="tab-7">
+                <div class="row clearfix">
+                  <div class="image-column">
+                    <div class="image-box mr_35">
+                      <figure class="image"><img src="assets/images/resource/banking-1.jpg" alt=""></figure>
+                    </div>
+                  </div>
+                  <div class="content-column">
+                    <div class="content-box mr_50">
+                      <h2>Investments</h2>
+                      <p>Beguiled and demoralized by the charms of pleasure of the so blinded by desire that they cannot
+                        foresee.</p>
+                      <div class="inner-box">
+                        <h6>Key Benefits:</h6>
+                        <ul class="list-style-one clearfix">
+                          <li>
+                            <div class="icon-box"><img src="assets/images/icons/icon-16.png" alt=""></div>100% Guaranteed
+                            returns
+                          </li>
+                          <li>
+                            <div class="icon-box"><img src="assets/images/icons/icon-16.png" alt=""></div>Loan against FD
+                            available
+                          </li>
+                          <li>
+                            <div class="icon-box"><img src="assets/images/icons/icon-16.png" alt=""></div>Flexible tenure
+                            options
+                          </li>
+                        </ul>
+                        <div class="inner">
+                          <div class="icon-box"><img src="assets/images/icons/icon-17.png" alt=""></div>
+                          <h4>Guide to <br>Fixed Deposits</h4>
+                          <h6>pdf 6.8mb</h6>
+                          <button type="button" class="theme-btn"><span>Download</span></button>
+                        </div>
+                      </div>
+                      <div class="lower-text">
+                        <div class="icon-box"><i class="flaticon-sparkle"></i></div>
+                        <h5>Find the Perfect <a href="index.html">FD Option</a> for Your Needs.</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab" id="tab-8">
+                <div class="row clearfix">
+                  <div class="image-column">
+                    <div class="image-box mr_35">
+                      <figure class="image"><img src="assets/images/resource/banking-1.jpg" alt=""></figure>
+                    </div>
+                  </div>
+                  <div class="content-column">
+                    <div class="content-box mr_50">
+                      <h2>Family 360o</h2>
+                      <p>Beguiled and demoralized by the charms of pleasure of the so blinded by desire that they cannot
+                        foresee.</p>
+                      <div class="inner-box">
+                        <h6>Key Benefits:</h6>
+                        <ul class="list-style-one clearfix">
+                          <li>
+                            <div class="icon-box"><img src="assets/images/icons/icon-16.png" alt=""></div>100% Guaranteed
+                            returns
+                          </li>
+                          <li>
+                            <div class="icon-box"><img src="assets/images/icons/icon-16.png" alt=""></div>Loan against FD
+                            available
+                          </li>
+                          <li>
+                            <div class="icon-box"><img src="assets/images/icons/icon-16.png" alt=""></div>Flexible tenure
+                            options
+                          </li>
+                        </ul>
+                        <div class="inner">
+                          <div class="icon-box"><img src="assets/images/icons/icon-17.png" alt=""></div>
+                          <h4>Guide to <br>Fixed Deposits</h4>
+                          <h6>pdf 6.8mb</h6>
+                          <button type="button" class="theme-btn"><span>Download</span></button>
+                        </div>
+                      </div>
+                      <div class="lower-text">
+                        <div class="icon-box"><i class="flaticon-sparkle"></i></div>
+                        <h5>Find the Perfect <a href="index.html">FD Option</a> for Your Needs.</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section data-tille="secure-growth">
+      <div class="secure-growth">
+        <div class="auto-container">
+          <div class="sec-title">
+            <span class="sub-title">Secure Growth</span>
+            <h2>Enhance Your Wealth Safely</h2>
+          </div>
+  
+          <div class="swiper secure-growth-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="growth-block-one">
+                  <!-- absolute top-0 left-0 h-full w-2 bg-red-500 -->
+                  <div class="red-box"></div>
+          
+                  
+                  <h3 class="text-xl font-semibold mb-2">Multi Currency a/c</h3>
+                  <p class="text-gray-500 mb-4">Duty through weakness will which is same as saying through...</p>
+          
+                  
+                  <div class="relative">
+                    <img src="public/assets/images/resource/growth-1.jpg" alt="Multi Currency" class="w-full h-auto rounded-md" />
+                    
+              
+                    <div class="absolute top-2 right-2 bg-white w-10 h-10 flex items-center justify-center rounded shadow-md">
+                      <img src="https://img.icons8.com/ios-filled/20/ff0000/expand--v1.png" alt="icon" />
+                    </div>
+                  </div>
+          
+                  <a href="#" class="mt-4 inline-flex items-center text-red-600 font-medium group-hover:underline">
+                    → Read More
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="growth-block-one">
+                  <!-- absolute top-0 left-0 h-full w-2 bg-red-500 -->
+                  <div class="red-box"></div>
+          
+                  
+                  <h3 class="text-xl font-semibold mb-2">Multi Currency a/c</h3>
+                  <p class="text-gray-500 mb-4">Duty through weakness will which is same as saying through...</p>
+          
+                  
+                  <div class="relative">
+                    <img src="public/assets/images/resource/growth-2.jpg" alt="Multi Currency" class="w-full h-auto rounded-md" />
+                    
+              
+                    <div class="absolute top-2 right-2 bg-white w-10 h-10 flex items-center justify-center rounded shadow-md">
+                      <img src="https://img.icons8.com/ios-filled/20/ff0000/expand--v1.png" alt="icon" />
+                    </div>
+                  </div>
+          
+                  <a href="#" class="mt-4 inline-flex items-center text-red-600 font-medium group-hover:underline">
+                    → Read More
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="growth-block-one">
+                  <!-- absolute top-0 left-0 h-full w-2 bg-red-500 -->
+                  <div class="red-box"></div>
+          
+                  
+                  <h3 class="text-xl font-semibold mb-2">Multi Currency a/c</h3>
+                  <p class="text-gray-500 mb-4">Duty through weakness will which is same as saying through...</p>
+          
+                  
+                  <div class="relative">
+                    <img src="public/assets/images/resource/growth-3.jpg" alt="Multi Currency" class="w-full h-auto rounded-md" />
+                    
+              
+                    <div class="absolute top-2 right-2 bg-white w-10 h-10 flex items-center justify-center rounded shadow-md">
+                      <img src="https://img.icons8.com/ios-filled/20/ff0000/expand--v1.png" alt="icon" />
+                    </div>
+                  </div>
+          
+                  <a href="#" class="mt-4 inline-flex items-center text-red-600 font-medium group-hover:underline">
+                    → Read More
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="growth-block-one">
+                  <!-- absolute top-0 left-0 h-full w-2 bg-red-500 -->
+                  <div class="red-box"></div>
+          
+                  
+                  <h3 class="text-xl font-semibold mb-2">Multi Currency a/c</h3>
+                  <p class="text-gray-500 mb-4">Duty through weakness will which is same as saying through...</p>
+          
+                  
+                  <div class="relative">
+                    <img src="public/assets/images/resource/growth-1.jpg" alt="Multi Currency" class="w-full h-auto rounded-md" />
+                    
+              
+                    <div class="absolute top-2 right-2 bg-white w-10 h-10 flex items-center justify-center rounded shadow-md">
+                      <img src="https://img.icons8.com/ios-filled/20/ff0000/expand--v1.png" alt="icon" />
+                    </div>
+                  </div>
+          
+                  <a href="#" class="mt-4 inline-flex items-center text-red-600 font-medium group-hover:underline">
+                    → Read More
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="growth-block-one">
+                  <!-- absolute top-0 left-0 h-full w-2 bg-red-500 -->
+                  <div class="red-box"></div>
+          
+                  
+                  <h3 class="text-xl font-semibold mb-2">Multi Currency a/c</h3>
+                  <p class="text-gray-500 mb-4">Duty through weakness will which is same as saying through...</p>
+          
+                  
+                  <div class="relative">
+                    <img src="public/assets/images/resource/growth-1.jpg" alt="Multi Currency" class="w-full h-auto rounded-md" />
+                    
+              
+                    <div class="absolute top-2 right-2 bg-white w-10 h-10 flex items-center justify-center rounded shadow-md">
+                      <img src="https://img.icons8.com/ios-filled/20/ff0000/expand--v1.png" alt="icon" />
+                    </div>
+                  </div>
+          
+                  <a href="#" class="mt-4 inline-flex items-center text-red-600 font-medium group-hover:underline">
+                    → Read More
+                  </a>
+                </div>
+              </div>
+             
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <div class="more-text">
+            <h5><i class="flaticon-sparkle"></i>Find the Perfect <a href="index.html">FD Option</a> for Your Needs.</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section data-tille="custom-banking sec-pad bg-color-1">
             <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-2.png);"></div>
             <div class="auto-container">
                 <div class="title-box">
@@ -1817,55 +1972,78 @@
                 </div>
             </div>
         </section> -->
-        <!-- custom-banking end -->
 
-
-        <!-- funfact-section -->
-        <!-- <section class="funfact-section centred">
-            <div class="outer-container clearfix">
-                <div class="funfact-block-one">
-                    <div class="inner-box">
-                        <div class="icon-box"><img src="assets/images/icons/icon-27.png" alt=""></div>
-                        <div class="count-outer">
-                            <span class="odometer odometer-auto-theme" data-count="8.5"><div class="odometer-inside"><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">0</span></span></span></span></span></div></span><span class="symble">k</span>
-                        </div>
-                        <p>Happy Customers World Wide.</p>
-                    </div>
+    <section data-tille="funfact-section">
+      <div class="funfact-section">
+        <div class="funfact-block-one">
+          <div class="inner-box">
+            <div class="icon-box"><img src="assets/images/icons/icon-27.png" alt=""></div>
+            <div class="count-outer">
+              <span class="odometer odometer-auto-theme" data-count="8.5">
+                <div class="odometer-inside">
+                  <span class="odometer-digit">
+                    <span class="odometer-digit-spacer">8</span>
+                    <span class="odometer-digit-inner">
+                      <span class="odometer-ribbon">
+                        <span class="odometer-ribbon-inner">
+                          <span class="odometer-value">0</span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
                 </div>
-                <div class="funfact-block-one">
-                    <div class="inner-box">
-                        <div class="icon-box"><img src="assets/images/icons/icon-28.png" alt=""></div>
-                        <div class="count-outer">
-                            <span class="odometer odometer-auto-theme" data-count="0.5"><div class="odometer-inside"><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">0</span></span></span></span></span></div></span><span class="symble">m</span>
-                        </div>
-                        <p>Transactions Processed Daily.</p>
-                    </div>
-                </div>
-                <div class="funfact-block-one">
-                    <div class="inner-box">
-                        <div class="icon-box"><img src="assets/images/icons/icon-29.png" alt=""></div>
-                        <div class="count-outer">
-                            <span class="odometer odometer-auto-theme" data-count="10000"><div class="odometer-inside"><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">0</span></span></span></span></span></div></span><span class="symble">+</span>
-                        </div>
-                        <p>ATMs and Branches Globally.</p>
-                    </div>
-                </div>
-                <div class="funfact-block-one">
-                    <div class="inner-box">
-                        <div class="icon-box"><img src="assets/images/icons/icon-30.png" alt=""></div>
-                        <div class="count-outer">
-                            <span class="odometer odometer-auto-theme" data-count="50"><div class="odometer-inside"><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">0</span></span></span></span></span></div></span><span class="symble">+</span>
-                        </div>
-                        <p>Years of Trusted Banking Service.</p>
-                    </div>
-                </div>
+              </span>
+              <span class="symble">k</span>
             </div>
-        </section> -->
-        <!-- funfact-section end -->
+            <p>Happy Customers World Wide.</p>
+          </div>
+        </div>
+        <div class="funfact-block-one">
+          <div class="inner-box">
+            <div class="icon-box"><img src="assets/images/icons/icon-28.png" alt=""></div>
+            <div class="count-outer">
+              <span class="odometer odometer-auto-theme" data-count="0.5">
+                <div class="odometer-inside"><span class="odometer-digit"><span
+                      class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span
+                        class="odometer-ribbon"><span class="odometer-ribbon-inner"><span
+                            class="odometer-value">0</span></span></span></span></span></div>
+              </span><span class="symble">m</span>
+            </div>
+            <p>Transactions Processed Daily.</p>
+          </div>
+        </div>
+        <div class="funfact-block-one">
+          <div class="inner-box">
+            <div class="icon-box"><img src="assets/images/icons/icon-29.png" alt=""></div>
+            <div class="count-outer">
+              <span class="odometer odometer-auto-theme" data-count="10000">
+                <div class="odometer-inside"><span class="odometer-digit"><span
+                      class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span
+                        class="odometer-ribbon"><span class="odometer-ribbon-inner"><span
+                            class="odometer-value">0</span></span></span></span></span></div>
+              </span><span class="symble">+</span>
+            </div>
+            <p>ATMs and Branches Globally.</p>
+          </div>
+        </div>
+        <div class="funfact-block-one">
+          <div class="inner-box">
+            <div class="icon-box"><img src="assets/images/icons/icon-30.png" alt=""></div>
+            <div class="count-outer">
+              <span class="odometer odometer-auto-theme" data-count="50">
+                <div class="odometer-inside"><span class="odometer-digit"><span
+                      class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span
+                        class="odometer-ribbon"><span class="odometer-ribbon-inner"><span
+                            class="odometer-value">0</span></span></span></span></span></div>
+              </span><span class="symble">+</span>
+            </div>
+            <p>Years of Trusted Banking Service.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-
-        <!-- calculator-section -->
-        <!-- <section class="calculator-section pt_120 pb_120">
+    <!-- <section data-tille="calculator-section pt_120 pb_120">
             <figure class="image-layer"><img src="assets/images/resource/men-2.png" alt=""></figure>
             <span class="big-text">Calculation <br>Instant</span>
             <div class="auto-container">
@@ -2356,11 +2534,8 @@
                 </div>
             </div>
         </section> -->
-        <!-- calculator-section end -->
 
-
-        <!-- creditcard-section -->
-        <!-- <section class="creditcard-section sec-pad">
+    <!-- <section data-tille="creditcard-section sec-pad">
             <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-4.png);"></div>
             <span class="big-text">Spending <br>Secure</span>
             <div class="auto-container">
@@ -2449,11 +2624,8 @@
                 </div>
             </div>
         </section> -->
-        <!-- creditcard-section end -->
 
-
-        <!-- locker-facility -->
-        <!-- <section class="locker-facility pt_120 pb_120">
+    <!-- <section data-tille="locker-facility pt_120 pb_120">
             <div class="auto-container">
                 <div class="row clearfix">
                     <div class="col-lg-6 col-md-12 col-sm-12 content-column">
@@ -2496,11 +2668,8 @@
                 </div>
             </div>
         </section> -->
-        <!-- locker-facility end -->
 
-
-        <!-- faq-section -->
-        <!-- <section class="faq-section sec-pad bg-color-1">
+    <!-- <section data-tille="faq-section sec-pad bg-color-1">
             <div class="auto-container">
                 <div class="sec-title centred">
                     <span class="sub-title">Faq’s</span>
@@ -2589,11 +2758,8 @@
                 </div>
             </div>
         </section> -->
-        <!-- faq-section end -->
 
-
-        <!-- news-section -->
-        <!-- <section class="news-section sec-pad-2">
+    <!-- <section data-tille="news-section sec-pad-2">
             <div class="auto-container">
                 <div class="sec-title">
                     <span class="sub-title">Blog Post</span>
@@ -2909,160 +3075,168 @@
                     </div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span class="flaticon-next"></span></button><button type="button" role="presentation" class="owl-next"><span class="flaticon-next"></span></button></div><div class="owl-dots disabled"><button role="button" class="owl-dot active"><span></span></button></div></div>
             </div>
         </section> -->
-        <!-- news-section end -->
 
-        <!-- main-footer -->
-        <footer class="main-footer">
-            <div class="widget-section">
-                <div class="auto-container">
-                    <div class="row clearfix">
-                        <div class="footer-column">
-                            <div class="footer-widget contact-widget">
-                                <div class="certified-box">
-                                    <div class="image-box"><img src="assets/images/icons/certified-1.png" alt=""></div>
-                                    <h4>Certified for Quality Management Excellence.</h4>
-                                    <span>2000-2001</span>
-                                </div>
-                                <div class="widget-content">
-                                    <div class="schedule-inner">
-                                        <div class="contact-info">
-                                            <h3>Enquiry</h3>
-                                            <ul class="list-item clearfix">
-                                                <li><a href="tel:08008961234">0800 896 1234</a> <span>(Toll Free) <br>Personal</span></li>
-                                                <li><a href="tel:496912345678">+49 69 1234 5678</a> <br><span>Corporate</span></li>
-                                            </ul>
-                                        </div>
-                                        <div class="opening-hour">
-                                            <h3>Banking Hours</h3>
-                                            <ul class="list-item clearfix">
-                                                <li>9.00am to 5.00pm <br><span>Mon - Friday</span></li>
-                                                <li>9.00am to 2.00pm <br><span>Satday</span></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="support-box">
-                                        <div class="icon-box"><img src="assets/images/icons/icon-35.png" alt=""></div>
-                                        <h4><a href="mailto:getsupport@flexibank.com">getsupport@flexibank.com</a></h4>
-                                        <p>Send your queries.</p>
-                                        <div class="link-box">
-                                            <a href="contact.html">
-                                                <svg class="link-box-link">
-                                                    <use href="/assets/icons/sprite.svg#icon-right-arrow"></use>
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="footer-column-haft">
-                            <div class="footer-widget links-widget ml_75">
-                                <div class="widget-title">
-                                    <h3>Our Bank</h3>
-                                </div>
-                                <div class="widget-content mb_25">
-                                    <ul class="links-list clearfix">
-                                        <li><a href="about.html">About Us<i class="flaticon-next"></i></a></li>
-                                        <li><a href="index.html">Awards &amp; Recognition<i class="flaticon-next"></i></a></li>
-                                        <li><a href="team.html">Leadership<i class="flaticon-next"></i></a></li>
-                                        <li><a href="blog.html">News &amp; Media<i class="flaticon-next"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="widget-title">
-                                    <h3>Support</h3>
-                                </div>
-                                <div class="widget-content">
-                                    <ul class="links-list clearfix">
-                                        <li><a href="contact.html">Branches<i class="flaticon-next"></i></a></li>
-                                        <li><a href="cards.html">ATM’s<i class="flaticon-next"></i></a></li>
-                                        <li><a href="contact.html">Customer Care<i class="flaticon-next"></i></a></li>
-                                        <li><a href="faq.html">Faq’s<i class="flaticon-next"></i></a></li>
-                                        <li><a href="contact.html">Contact Us<i class="flaticon-next"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="footer-column-haft">
-                            <div class="footer-widget links-widget ml_90">
-                                <div class="widget-title">
-                                    <h3>Products</h3>
-                                </div>
-                                <div class="widget-content">
-                                    <ul class="links-list clearfix">
-                                        <li><a href="account.html">Accounts<i class="flaticon-next"></i></a></li>
-                                        <li><a href="index.html">Fixed Deposits<i class="flaticon-next"></i></a></li>
-                                        <li><a href="cards.html">Credit Cards<i class="flaticon-next"></i></a></li>
-                                        <li><a href="loans-1.html">Loans<i class="flaticon-next"></i></a></li>
-                                        <li><a href="index.html">Locker<i class="flaticon-next"></i></a></li>
-                                        <li><a href="cards.html">Money Transfer<i class="flaticon-next"></i></a></li>
-                                        <li><a href="investments-details-6.html">Investments<i class="flaticon-next"></i></a></li>
-                                        <li><a href="investments-details-4.html">Insurance<i class="flaticon-next"></i></a></li>
-                                        <li><a href="cards.html">Payments<i class="flaticon-next"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <footer class="main-footer">
+      <div class="widget-section">
+        <div class="auto-container">
+          <div class="row clearfix">
+            <div class="footer-column">
+              <div class="footer-widget contact-widget">
+                <div class="certified-box">
+                  <div class="image-box"><img src="assets/images/icons/certified-1.png" alt=""></div>
+                  <h4>Certified for Quality Management Excellence.</h4>
+                  <span>2000-2001</span>
                 </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="auto-container">
-                    <div class="bottom-top">
-                        <ul class="list-item">
-                            <li>
-                                <div class="icon-box"><img src="assets/images/icons/icon-38.png" alt=""></div>
-                                <h4><a href="index.html">Branches &amp; ATMs</a></h4>
-                            </li>
-                            <li>
-                                <div class="icon-box"><img src="assets/images/icons/icon-39.png" alt=""></div>
-                                <h4><a href="index.html">Complaint Registration</a></h4>
-                            </li>
-                            <li>
-                                <div class="icon-box"><img src="assets/images/icons/icon-40.png" alt=""></div>
-                                <h4><button type="button">Download Forms</button></h4>
-                            </li>
-                        </ul>
+                <div class="widget-content">
+                  <div class="schedule-inner">
+                    <div class="contact-info">
+                      <h3>Enquiry</h3>
+                      <ul class="list-item clearfix">
+                        <li><a href="tel:08008961234">0800 896 1234</a> <span>(Toll Free) <br>Personal</span></li>
+                        <li><a href="tel:496912345678">+49 69 1234 5678</a> <br><span>Corporate</span></li>
+                      </ul>
                     </div>
-                    <div class="bottom-inner">
-                        <div class="social-box">
-                            <span>Follow Us On</span>
-                            <ul class="social-links">
-                                <li><a href="index.html"><svg><use href="/assets/icons/sprite.svg#icon-fb"></use></svg></a></li>
-                                <li><a href="index.html"><svg><use href="/public/assets/icons/sprite.svg#icon-X"></use></svg></i></a></li>
-                                <li><a href="index.html"><svg><use href="/public/assets/icons/sprite.svg#icon-instagram"></use></svg></i></a></li>
-                                <li><a href="index.html"><svg><use href="/public/assets/icons/sprite.svg#icon-youtube"></use></svg></i></a></li>
-                                <li><a href="index.html"><svg><use href="/public/assets/icons/sprite.svg#icon-vimeo"></use></svg></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="footer-logo">
-                            <figure class="logo"><a href="index.html"><img src="assets/images/logo.png" alt=""></a></figure>
-                            <div class="copyright"><p>copyrights <a href="index.html">© 2025 Flexibank.</a> All Rights Reserved.</p></div>
-                        </div>
-                        <ul class="footer-nav clearfix">
-                            <li><a href="index.html">Privacy Policy</a></li>
-                            <li><a href="index.html">Terms &amp; Conditions</a></li>
-                            <li><a href="index.html">Disclaimer.</a></li>
-                        </ul>
+                    <div class="opening-hour">
+                      <h3>Banking Hours</h3>
+                      <ul class="list-item clearfix">
+                        <li>9.00am to 5.00pm <br><span>Mon - Friday</span></li>
+                        <li>9.00am to 2.00pm <br><span>Satday</span></li>
+                      </ul>
                     </div>
+                  </div>
+                  <div class="support-box">
+                    <div class="icon-box"><img src="assets/images/icons/icon-35.png" alt=""></div>
+                    <h4><a href="mailto:getsupport@flexibank.com">getsupport@flexibank.com</a></h4>
+                    <p>Send your queries.</p>
+                    <div class="link-box">
+                      <a href="contact.html">
+                        <svg class="link-box-link">
+                          <use href="/assets/icons/sprite.svg#icon-right-arrow"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </footer>
-        <!-- main-footer end -->
-
-
-
-        <!--Scroll to top-->
-        <div class="scroll-to-top hidden">
-            <svg class="scroll-top-inner" viewBox="-1 -1 102 102">
-                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;"></path>
-            </svg>
+            <div class="footer-column-haft">
+              <div class="footer-widget links-widget ml_75">
+                <div class="widget-title">
+                  <h3>Our Bank</h3>
+                </div>
+                <div class="widget-content mb_25">
+                  <ul class="links-list clearfix">
+                    <li><a href="about.html">About Us<i class="flaticon-next"></i></a></li>
+                    <li><a href="index.html">Awards &amp; Recognition<i class="flaticon-next"></i></a></li>
+                    <li><a href="team.html">Leadership<i class="flaticon-next"></i></a></li>
+                    <li><a href="blog.html">News &amp; Media<i class="flaticon-next"></i></a></li>
+                  </ul>
+                </div>
+                <div class="widget-title">
+                  <h3>Support</h3>
+                </div>
+                <div class="widget-content">
+                  <ul class="links-list clearfix">
+                    <li><a href="contact.html">Branches<i class="flaticon-next"></i></a></li>
+                    <li><a href="cards.html">ATM’s<i class="flaticon-next"></i></a></li>
+                    <li><a href="contact.html">Customer Care<i class="flaticon-next"></i></a></li>
+                    <li><a href="faq.html">Faq’s<i class="flaticon-next"></i></a></li>
+                    <li><a href="contact.html">Contact Us<i class="flaticon-next"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer-column-haft">
+              <div class="footer-widget links-widget ml_90">
+                <div class="widget-title">
+                  <h3>Products</h3>
+                </div>
+                <div class="widget-content">
+                  <ul class="links-list clearfix">
+                    <li><a href="account.html">Accounts<i class="flaticon-next"></i></a></li>
+                    <li><a href="index.html">Fixed Deposits<i class="flaticon-next"></i></a></li>
+                    <li><a href="cards.html">Credit Cards<i class="flaticon-next"></i></a></li>
+                    <li><a href="loans-1.html">Loans<i class="flaticon-next"></i></a></li>
+                    <li><a href="index.html">Locker<i class="flaticon-next"></i></a></li>
+                    <li><a href="cards.html">Money Transfer<i class="flaticon-next"></i></a></li>
+                    <li><a href="investments-details-6.html">Investments<i class="flaticon-next"></i></a></li>
+                    <li><a href="investments-details-4.html">Insurance<i class="flaticon-next"></i></a></li>
+                    <li><a href="cards.html">Payments<i class="flaticon-next"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        
+      </div>
+      <div class="footer-bottom">
+        <div class="auto-container">
+          <div class="bottom-top">
+            <ul class="list-item">
+              <li>
+                <div class="icon-box"><img src="assets/images/icons/icon-38.png" alt=""></div>
+                <h4><a href="index.html">Branches &amp; ATMs</a></h4>
+              </li>
+              <li>
+                <div class="icon-box"><img src="assets/images/icons/icon-39.png" alt=""></div>
+                <h4><a href="index.html">Complaint Registration</a></h4>
+              </li>
+              <li>
+                <div class="icon-box"><img src="assets/images/icons/icon-40.png" alt=""></div>
+                <h4><button type="button">Download Forms</button></h4>
+              </li>
+            </ul>
+          </div>
+          <div class="bottom-inner">
+            <div class="social-box">
+              <span>Follow Us On</span>
+              <ul class="social-links">
+                <li><a href="index.html"><svg>
+                      <use href="/assets/icons/sprite.svg#icon-fb"></use>
+                    </svg></a></li>
+                <li><a href="index.html"><svg>
+                      <use href="/public/assets/icons/sprite.svg#icon-X"></use>
+                    </svg></i></a></li>
+                <li><a href="index.html"><svg>
+                      <use href="/public/assets/icons/sprite.svg#icon-instagram"></use>
+                    </svg></i></a></li>
+                <li><a href="index.html"><svg>
+                      <use href="/public/assets/icons/sprite.svg#icon-youtube"></use>
+                    </svg></i></a></li>
+                <li><a href="index.html"><svg>
+                      <use href="/public/assets/icons/sprite.svg#icon-vimeo"></use>
+                    </svg></i></a></li>
+              </ul>
+            </div>
+            <div class="footer-logo">
+              <figure class="logo"><a href="index.html"><img src="assets/images/logo.png" alt=""></a></figure>
+              <div class="copyright">
+                <p>copyrights <a href="index.html">© 2025 Flexibank.</a> All Rights Reserved.</p>
+              </div>
+            </div>
+            <ul class="footer-nav clearfix">
+              <li><a href="index.html">Privacy Policy</a></li>
+              <li><a href="index.html">Terms &amp; Conditions</a></li>
+              <li><a href="index.html">Disclaimer.</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="scroll-to-top hidden">
+      <svg class="scroll-top-inner" viewBox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+          style="transition: stroke-dashoffset 10ms linear; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;">
+        </path>
+      </svg>
     </div>
 
+  </div>
 
-    <!-- jequery plugins -->
-    <!-- <script src="assets/js/jquery.js"></script>
+
+  <!-- jequery plugins -->
+  <!-- <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/owl.js"></script>
     <script src="assets/js/wow.js"></script>
@@ -3076,15 +3250,16 @@
     <script src="assets/js/odometer.js"></script>
     <script src="assets/js/nav-tool.js"></script> -->
 
-    <!-- main-js -->
-    <script type="module" src="/src/main.ts"></script>
+  <!-- main-js -->
+  <script type="module" src="/src/main.ts"></script>
 
 
-  </body>
+</body>
+
 </html>
 
- <!-- preloader -->
-        <!-- <div class="loader-wrap">
+<!-- preloader -->
+<!-- <div class="loader-wrap">
             <div class="preloader">
                 <div class="preloader-close"><i class="fas fa-times"></i></div>
                 <div id="handle-preloader" class="handle-preloader">
@@ -3123,11 +3298,11 @@
                 </div>
             </div>
         </div> -->
-        <!-- preloader end -->
+<!-- preloader end -->
 
 
-        <!--Search Popup-->
-        <!-- <div i d="search-popup" class="search-popup">
+<!--Search Popup-->
+<!-- <div i d="search-popup" class="search-popup">
             <div class="popup-inner">
                 <div class="upper-box">
                     <figure class="logo-box"><a href="index.html"><img src="assets/images/logo.png" alt=""></a></figure>
@@ -3148,8 +3323,8 @@
                 </div>
             </div>
         </div>  -->
-         <!-- Mobile Menu  -->
-        <!-- <div class="mobile-menu">
+<!-- Mobile Menu  -->
+<!-- <div class="mobile-menu">
             <div class="menu-backdrop"></div>
             <div class="close-btn"><i class="fas fa-times"></i></div>
             
@@ -3269,4 +3444,4 @@
                 </div>
             </nav>
         </div> -->
-        <!-- End Mobile Menu -->
+<!-- End Mobile Menu -->
